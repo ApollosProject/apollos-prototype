@@ -60,7 +60,7 @@ export {
 const AuthStack = createNativeStackNavigator();
 const IdentityStack = createNativeStackNavigator();
 
-const AuthNavigator = (props) => (
+const AuthNavigator = ({ forgotPasswordURL, ...props }) => (
   <AuthStack.Navigator
     initialRouteName="AuthIdentity"
     headerMode="none"
@@ -91,6 +91,7 @@ const AuthNavigator = (props) => (
       name="AuthPasswordEntryConnected"
       options={{ headerShown: true }}
       component={AuthPasswordEntryConnected}
+      initialParams={{ forgotPasswordURL }}
     />
     <AuthStack.Screen
       name="AuthProfileEntryConnected"
@@ -136,20 +137,17 @@ const ThemedAuthNavigator = withTheme(({ theme, ...props }) => ({
   },
 }))(AuthNavigator);
 
-ThemedAuthNavigator.propTypes = {
-  screenProps: PropTypes.shape({
-    alternateLoginText: PropTypes.node,
-    authTitleText: PropTypes.string,
-    confirmationTitleText: PropTypes.string,
-    confirmationPromptText: PropTypes.string,
-    onFinishAuth: PropTypes.func,
-    passwordPromptText: PropTypes.string,
-    smsPolicyInfo: PropTypes.node,
-    smsPromptText: PropTypes.string,
-    emailRequired: PropTypes.bool,
-    handleForgotPassword: PropTypes.func,
-  }),
-  BackgroundComponent: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
+AuthNavigator.propTypes = {
+  alternateLoginText: PropTypes.node,
+  authTitleText: PropTypes.string,
+  confirmationTitleText: PropTypes.string,
+  confirmationPromptText: PropTypes.string,
+  onFinishAuth: PropTypes.func,
+  passwordPromptText: PropTypes.string,
+  smsPolicyInfo: PropTypes.node,
+  smsPromptText: PropTypes.string,
+  emailRequired: PropTypes.bool,
+  forgotPasswordURL: PropTypes.string,
 };
 
 const Auth = (props) => <ThemedAuthNavigator {...props} />;

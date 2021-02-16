@@ -15,6 +15,7 @@ import {
   ButtonLink,
   BackgroundView,
 } from '@apollosproject/ui-kit';
+import { RockAuthedWebBrowser } from '@apollosproject/ui-connected';
 
 import { FlexedSafeAreaView, TitleText, PromptText } from '../styles';
 
@@ -22,7 +23,7 @@ const PasswordEntry = ({
   passwordTitleText,
   passwordPromptText,
   passwordPromptTextNewUser,
-  handleForgotPassword,
+  forgotPasswordURL,
   disabled,
   errors,
   isLoading,
@@ -32,59 +33,62 @@ const PasswordEntry = ({
   BackgroundComponent,
   newUser,
 }) => (
-  <KeyboardAvoidingView
-    style={StyleSheet.absoluteFill}
-    behavior={'padding'}
-    keyboardVerticalOffset={
-      Platform.OS === 'android' ? StatusBar.currentHeight : 0
-    }
-  >
-    <BackgroundComponent>
-      <FlexedSafeAreaView>
-        <ScrollView>
-          <PaddedView>
-            <TitleText>{passwordTitleText}</TitleText>
-            <PromptText padded>
-              {newUser ? passwordPromptTextNewUser : passwordPromptText}
-            </PromptText>
+  <RockAuthedWebBrowser>
+    {(openUrl) => (
+      <KeyboardAvoidingView
+        style={StyleSheet.absoluteFill}
+        behavior={'padding'}
+        keyboardVerticalOffset={
+          Platform.OS === 'android' ? StatusBar.currentHeight : 0
+        }
+      >
+        <BackgroundComponent>
+          <FlexedSafeAreaView>
+            <ScrollView>
+              <PaddedView>
+                <TitleText>{passwordTitleText}</TitleText>
+                <PromptText padded>
+                  {newUser ? passwordPromptTextNewUser : passwordPromptText}
+                </PromptText>
 
-            <TextInput
-              autoFocus
-              autoComplete={'password'}
-              label={'Password'}
-              type={'password'}
-              textContentType="password"
-              enablesReturnKeyAutomatically
-              returnKeyType={'next'}
-              onSubmitEditing={onPressNext}
-              error={get(errors, 'password')}
-              onChangeText={(text) => setFieldValue('password', text)}
-              value={get(values, 'password')}
-            />
+                <TextInput
+                  autoFocus
+                  autoComplete={'password'}
+                  label={'Password'}
+                  type={'password'}
+                  textContentType="password"
+                  enablesReturnKeyAutomatically
+                  returnKeyType={'next'}
+                  onSubmitEditing={onPressNext}
+                  error={get(errors, 'password')}
+                  onChangeText={(text) => setFieldValue('password', text)}
+                  value={get(values, 'password')}
+                />
+                {forgotPasswordURL ? (
+                  <ButtonLink onPress={() => openUrl(forgotPasswordURL)}>
+                    Forgot your password?
+                  </ButtonLink>
+                ) : null}
+              </PaddedView>
+            </ScrollView>
 
-            {handleForgotPassword ? (
-              <ButtonLink onPress={handleForgotPassword}>
-                Forgot your password?
-              </ButtonLink>
+            {onPressNext ? (
+              <PaddedView>
+                <Button
+                  onPress={onPressNext}
+                  disabled={disabled}
+                  loading={isLoading}
+                  title={'Login'}
+                  type={'primary'}
+                  pill={false}
+                />
+              </PaddedView>
             ) : null}
-          </PaddedView>
-        </ScrollView>
-
-        {onPressNext ? (
-          <PaddedView>
-            <Button
-              onPress={onPressNext}
-              disabled={disabled}
-              loading={isLoading}
-              title={'Login'}
-              type={'primary'}
-              pill={false}
-            />
-          </PaddedView>
-        ) : null}
-      </FlexedSafeAreaView>
-    </BackgroundComponent>
-  </KeyboardAvoidingView>
+          </FlexedSafeAreaView>
+        </BackgroundComponent>
+      </KeyboardAvoidingView>
+    )}
+  </RockAuthedWebBrowser>
 );
 
 PasswordEntry.propTypes = {
@@ -92,7 +96,7 @@ PasswordEntry.propTypes = {
   passwordPromptText: PropTypes.string,
   passwordPromptTextNewUser: PropTypes.string,
   disabled: PropTypes.bool,
-  handleForgotPassword: PropTypes.func,
+  forgotPasswordURL: PropTypes.string,
   errors: PropTypes.shape({
     password: PropTypes.string,
   }),
