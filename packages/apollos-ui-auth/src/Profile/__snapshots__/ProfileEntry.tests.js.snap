@@ -1,48 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ui-auth/Profile/ProfileEntry should render 1`] = `
-<View
-  onLayout={[Function]}
-  style={
+<BVLinearGradient
+  colors={
     Array [
-      Object {
-        "bottom": 0,
-        "left": 0,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
-      },
-      Object {
-        "paddingBottom": 0,
-      },
+      4294967295,
+      4294506484,
     ]
   }
+  endPoint={
+    Object {
+      "x": 0.5,
+      "y": 1,
+    }
+  }
+  locations={null}
+  startPoint={
+    Object {
+      "x": 0.5,
+      "y": 0,
+    }
+  }
+  style={
+    Object {
+      "flex": 1,
+      "height": "100%",
+    }
+  }
 >
-  <BVLinearGradient
-    colors={
-      Array [
-        4294967295,
-        4294506484,
-      ]
-    }
-    endPoint={
-      Object {
-        "x": 0.5,
-        "y": 1,
-      }
-    }
-    locations={null}
-    startPoint={
-      Object {
-        "x": 0.5,
-        "y": 0,
-      }
-    }
+  <View
+    onLayout={[Function]}
     style={
-      Object {
-        "flex": 1,
-        "height": "100%",
-      }
+      Array [
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "paddingBottom": 0,
+        },
+      ]
     }
   >
     <RCTScrollView>
@@ -406,6 +402,6 @@ exports[`ui-auth/Profile/ProfileEntry should render 1`] = `
         </View>
       </View>
     </RCTScrollView>
-  </BVLinearGradient>
-</View>
+  </View>
+</BVLinearGradient>
 `;

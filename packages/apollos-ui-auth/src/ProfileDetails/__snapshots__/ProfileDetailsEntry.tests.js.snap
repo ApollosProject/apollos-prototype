@@ -1,48 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ui-auth/Profile/ProfileDetailsEntry should render 1`] = `
-<View
-  onLayout={[Function]}
-  style={
+<BVLinearGradient
+  colors={
     Array [
-      Object {
-        "bottom": 0,
-        "left": 0,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
-      },
-      Object {
-        "paddingBottom": 0,
-      },
+      4294967295,
+      4294506484,
     ]
   }
+  endPoint={
+    Object {
+      "x": 0.5,
+      "y": 1,
+    }
+  }
+  locations={null}
+  startPoint={
+    Object {
+      "x": 0.5,
+      "y": 0,
+    }
+  }
+  style={
+    Object {
+      "flex": 1,
+      "height": "100%",
+    }
+  }
 >
-  <BVLinearGradient
-    colors={
-      Array [
-        4294967295,
-        4294506484,
-      ]
-    }
-    endPoint={
-      Object {
-        "x": 0.5,
-        "y": 1,
-      }
-    }
-    locations={null}
-    startPoint={
-      Object {
-        "x": 0.5,
-        "y": 0,
-      }
-    }
+  <View
+    onLayout={[Function]}
     style={
-      Object {
-        "flex": 1,
-        "height": "100%",
-      }
+      Array [
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "paddingBottom": 0,
+        },
+      ]
     }
   >
     <RCTScrollView>
@@ -405,29 +401,25 @@ exports[`ui-auth/Profile/ProfileDetailsEntry should render 1`] = `
         </View>
       </View>
     </RCTScrollView>
-  </BVLinearGradient>
-</View>
+  </View>
+</BVLinearGradient>
 `;
 
 exports[`ui-auth/Profile/ProfileDetailsEntry should render a different background component 1`] = `
-<View
-  onLayout={[Function]}
-  style={
-    Array [
-      Object {
-        "bottom": 0,
-        "left": 0,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
-      },
-      Object {
-        "paddingBottom": 0,
-      },
-    ]
-  }
->
-  <View>
+<View>
+  <View
+    onLayout={[Function]}
+    style={
+      Array [
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "paddingBottom": 0,
+        },
+      ]
+    }
+  >
     <RCTScrollView>
       <View>
         <View
@@ -793,48 +785,44 @@ exports[`ui-auth/Profile/ProfileDetailsEntry should render a different backgroun
 `;
 
 exports[`ui-auth/Profile/ProfileDetailsEntry should render a loading state 1`] = `
-<View
-  onLayout={[Function]}
-  style={
+<BVLinearGradient
+  colors={
     Array [
-      Object {
-        "bottom": 0,
-        "left": 0,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
-      },
-      Object {
-        "paddingBottom": 0,
-      },
+      4294967295,
+      4294506484,
     ]
   }
+  endPoint={
+    Object {
+      "x": 0.5,
+      "y": 1,
+    }
+  }
+  locations={null}
+  startPoint={
+    Object {
+      "x": 0.5,
+      "y": 0,
+    }
+  }
+  style={
+    Object {
+      "flex": 1,
+      "height": "100%",
+    }
+  }
 >
-  <BVLinearGradient
-    colors={
-      Array [
-        4294967295,
-        4294506484,
-      ]
-    }
-    endPoint={
-      Object {
-        "x": 0.5,
-        "y": 1,
-      }
-    }
-    locations={null}
-    startPoint={
-      Object {
-        "x": 0.5,
-        "y": 0,
-      }
-    }
+  <View
+    onLayout={[Function]}
     style={
-      Object {
-        "flex": 1,
-        "height": "100%",
-      }
+      Array [
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "paddingBottom": 0,
+        },
+      ]
     }
   >
     <RCTScrollView>
@@ -1197,53 +1185,49 @@ exports[`ui-auth/Profile/ProfileDetailsEntry should render a loading state 1`] =
         </View>
       </View>
     </RCTScrollView>
-  </BVLinearGradient>
-</View>
+  </View>
+</BVLinearGradient>
 `;
 
 exports[`ui-auth/Profile/ProfileDetailsEntry should render when disabled 1`] = `
-<View
-  onLayout={[Function]}
-  style={
+<BVLinearGradient
+  colors={
     Array [
-      Object {
-        "bottom": 0,
-        "left": 0,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
-      },
-      Object {
-        "paddingBottom": 0,
-      },
+      4294967295,
+      4294506484,
     ]
   }
+  endPoint={
+    Object {
+      "x": 0.5,
+      "y": 1,
+    }
+  }
+  locations={null}
+  startPoint={
+    Object {
+      "x": 0.5,
+      "y": 0,
+    }
+  }
+  style={
+    Object {
+      "flex": 1,
+      "height": "100%",
+    }
+  }
 >
-  <BVLinearGradient
-    colors={
-      Array [
-        4294967295,
-        4294506484,
-      ]
-    }
-    endPoint={
-      Object {
-        "x": 0.5,
-        "y": 1,
-      }
-    }
-    locations={null}
-    startPoint={
-      Object {
-        "x": 0.5,
-        "y": 0,
-      }
-    }
+  <View
+    onLayout={[Function]}
     style={
-      Object {
-        "flex": 1,
-        "height": "100%",
-      }
+      Array [
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "paddingBottom": 0,
+        },
+      ]
     }
   >
     <RCTScrollView>
@@ -1606,53 +1590,49 @@ exports[`ui-auth/Profile/ProfileDetailsEntry should render when disabled 1`] = `
         </View>
       </View>
     </RCTScrollView>
-  </BVLinearGradient>
-</View>
+  </View>
+</BVLinearGradient>
 `;
 
 exports[`ui-auth/Profile/ProfileDetailsEntry should render with a different gender list 1`] = `
-<View
-  onLayout={[Function]}
-  style={
+<BVLinearGradient
+  colors={
     Array [
-      Object {
-        "bottom": 0,
-        "left": 0,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
-      },
-      Object {
-        "paddingBottom": 0,
-      },
+      4294967295,
+      4294506484,
     ]
   }
+  endPoint={
+    Object {
+      "x": 0.5,
+      "y": 1,
+    }
+  }
+  locations={null}
+  startPoint={
+    Object {
+      "x": 0.5,
+      "y": 0,
+    }
+  }
+  style={
+    Object {
+      "flex": 1,
+      "height": "100%",
+    }
+  }
 >
-  <BVLinearGradient
-    colors={
-      Array [
-        4294967295,
-        4294506484,
-      ]
-    }
-    endPoint={
-      Object {
-        "x": 0.5,
-        "y": 1,
-      }
-    }
-    locations={null}
-    startPoint={
-      Object {
-        "x": 0.5,
-        "y": 0,
-      }
-    }
+  <View
+    onLayout={[Function]}
     style={
-      Object {
-        "flex": 1,
-        "height": "100%",
-      }
+      Array [
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "paddingBottom": 0,
+        },
+      ]
     }
   >
     <RCTScrollView>
@@ -2015,53 +1995,49 @@ exports[`ui-auth/Profile/ProfileDetailsEntry should render with a different gend
         </View>
       </View>
     </RCTScrollView>
-  </BVLinearGradient>
-</View>
+  </View>
+</BVLinearGradient>
 `;
 
 exports[`ui-auth/Profile/ProfileDetailsEntry should render with a different prompt and title 1`] = `
-<View
-  onLayout={[Function]}
-  style={
+<BVLinearGradient
+  colors={
     Array [
-      Object {
-        "bottom": 0,
-        "left": 0,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
-      },
-      Object {
-        "paddingBottom": 0,
-      },
+      4294967295,
+      4294506484,
     ]
   }
+  endPoint={
+    Object {
+      "x": 0.5,
+      "y": 1,
+    }
+  }
+  locations={null}
+  startPoint={
+    Object {
+      "x": 0.5,
+      "y": 0,
+    }
+  }
+  style={
+    Object {
+      "flex": 1,
+      "height": "100%",
+    }
+  }
 >
-  <BVLinearGradient
-    colors={
-      Array [
-        4294967295,
-        4294506484,
-      ]
-    }
-    endPoint={
-      Object {
-        "x": 0.5,
-        "y": 1,
-      }
-    }
-    locations={null}
-    startPoint={
-      Object {
-        "x": 0.5,
-        "y": 0,
-      }
-    }
+  <View
+    onLayout={[Function]}
     style={
-      Object {
-        "flex": 1,
-        "height": "100%",
-      }
+      Array [
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "paddingBottom": 0,
+        },
+      ]
     }
   >
     <RCTScrollView>
@@ -2424,53 +2400,49 @@ exports[`ui-auth/Profile/ProfileDetailsEntry should render with a different prom
         </View>
       </View>
     </RCTScrollView>
-  </BVLinearGradient>
-</View>
+  </View>
+</BVLinearGradient>
 `;
 
 exports[`ui-auth/Profile/ProfileDetailsEntry should render with errors 1`] = `
-<View
-  onLayout={[Function]}
-  style={
+<BVLinearGradient
+  colors={
     Array [
-      Object {
-        "bottom": 0,
-        "left": 0,
-        "position": "absolute",
-        "right": 0,
-        "top": 0,
-      },
-      Object {
-        "paddingBottom": 0,
-      },
+      4294967295,
+      4294506484,
     ]
   }
+  endPoint={
+    Object {
+      "x": 0.5,
+      "y": 1,
+    }
+  }
+  locations={null}
+  startPoint={
+    Object {
+      "x": 0.5,
+      "y": 0,
+    }
+  }
+  style={
+    Object {
+      "flex": 1,
+      "height": "100%",
+    }
+  }
 >
-  <BVLinearGradient
-    colors={
-      Array [
-        4294967295,
-        4294506484,
-      ]
-    }
-    endPoint={
-      Object {
-        "x": 0.5,
-        "y": 1,
-      }
-    }
-    locations={null}
-    startPoint={
-      Object {
-        "x": 0.5,
-        "y": 0,
-      }
-    }
+  <View
+    onLayout={[Function]}
     style={
-      Object {
-        "flex": 1,
-        "height": "100%",
-      }
+      Array [
+        Object {
+          "flex": 1,
+        },
+        Object {
+          "paddingBottom": 0,
+        },
+      ]
     }
   >
     <RCTScrollView>
@@ -2833,6 +2805,6 @@ exports[`ui-auth/Profile/ProfileDetailsEntry should render with errors 1`] = `
         </View>
       </View>
     </RCTScrollView>
-  </BVLinearGradient>
-</View>
+  </View>
+</BVLinearGradient>
 `;

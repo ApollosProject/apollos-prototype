@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  Platform,
-  View,
-  KeyboardAvoidingView,
-  StatusBar,
-  ScrollView,
-  StyleSheet,
-} from 'react-native';
+import { Platform, View, KeyboardAvoidingView, ScrollView } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import PropTypes from 'prop-types';
@@ -27,9 +20,14 @@ import {
 } from '@apollosproject/ui-kit';
 
 const FlexedSafeAreaView = styled(
-  { height: '100%' },
+  { flex: 1 },
   'ui-auth.FlexedSafeAreaView'
 )(SafeAreaView);
+
+const FlexedKeyboardAvoidingView = styled(
+  { flex: 1 },
+  'ui-auth.FlexedKeyboardAvoidingView'
+)(KeyboardAvoidingView);
 
 const BrandIcon = withTheme(
   ({ theme }) => ({
@@ -170,15 +168,9 @@ const ProfileEntryFieldContainer = ({
   isLoading,
   children,
 }) => (
-  <KeyboardAvoidingView
-    style={StyleSheet.absoluteFill}
-    behavior={'padding'}
-    keyboardVerticalOffset={
-      Platform.OS === 'android' ? StatusBar.currentHeight : 0
-    }
-  >
-    <BackgroundComponent>
-      <FlexedSafeAreaView>
+  <BackgroundComponent>
+    <FlexedSafeAreaView edges={['right', 'top', 'left']}>
+      <FlexedKeyboardAvoidingView behavior={'padding'}>
         <ScrollView>
           <PaddedView>
             <TitleText>{title}</TitleText>
@@ -199,9 +191,9 @@ const ProfileEntryFieldContainer = ({
             />
           </PaddedView>
         ) : null}
-      </FlexedSafeAreaView>
-    </BackgroundComponent>
-  </KeyboardAvoidingView>
+      </FlexedKeyboardAvoidingView>
+    </FlexedSafeAreaView>
+  </BackgroundComponent>
 );
 
 ProfileEntryFieldContainer.propTypes = {
@@ -220,6 +212,7 @@ ProfileEntryFieldContainer.defaultProps = {
 
 export {
   FlexedSafeAreaView,
+  FlexedKeyboardAvoidingView,
   BrandIcon,
   TitleText,
   PromptText,
