@@ -38,61 +38,61 @@ const PasswordEntry = ({
   const statusBarInset = useSafeAreaInsets().top; // inset of the status bar
   const headerInset = statusBarInset + 44; // inset to use for a small header since it's frame is equal to 44 + the frame of status bar
   return (
-  <RockAuthedWebBrowser>
-    {(openUrl) => (
-    <BackgroundComponent>
-      <FlexedSafeAreaView edges={['right', 'top', 'left']}>
-        <FlexedKeyboardAvoidingView
-          behavior={'padding'}
-          keyboardVerticalOffset={Platform.OS === 'ios' ? headerInset : 0}
-        >
-          <ScrollView>
-            <PaddedView>
-              <TitleText>{passwordTitleText}</TitleText>
-              <PromptText padded>
-                {newUser ? passwordPromptTextNewUser : passwordPromptText}
-              </PromptText>
+    <RockAuthedWebBrowser>
+      {(openUrl) => (
+        <BackgroundComponent>
+          <FlexedSafeAreaView edges={['right', 'top', 'left']}>
+            <FlexedKeyboardAvoidingView
+              behavior={'padding'}
+              keyboardVerticalOffset={Platform.OS === 'ios' ? headerInset : 0}
+            >
+              <ScrollView>
+                <PaddedView>
+                  <TitleText>{passwordTitleText}</TitleText>
+                  <PromptText padded>
+                    {newUser ? passwordPromptTextNewUser : passwordPromptText}
+                  </PromptText>
 
-              <TextInput
-                autoFocus
-                autoComplete={'password'}
-                label={'Password'}
-                type={'password'}
-                textContentType="password"
-                enablesReturnKeyAutomatically
-                returnKeyType={'next'}
-                onSubmitEditing={onPressNext}
-                error={get(errors, 'password')}
-                onChangeText={(text) => setFieldValue('password', text)}
-                value={get(values, 'password')}
-              />
+                  <TextInput
+                    autoFocus
+                    autoComplete={'password'}
+                    label={'Password'}
+                    type={'password'}
+                    textContentType="password"
+                    enablesReturnKeyAutomatically
+                    returnKeyType={'next'}
+                    onSubmitEditing={onPressNext}
+                    error={get(errors, 'password')}
+                    onChangeText={(text) => setFieldValue('password', text)}
+                    value={get(values, 'password')}
+                  />
 
-              {handleForgotPassword ? (
-                  <ButtonLink onPress={() => openUrl(forgotPasswordURL)}>
-                  Forgot your password?
-                </ButtonLink>
+                  {forgotPasswordURL ? (
+                    <ButtonLink onPress={() => openUrl(forgotPasswordURL)}>
+                      Forgot your password?
+                    </ButtonLink>
+                  ) : null}
+                </PaddedView>
+              </ScrollView>
+
+              {onPressNext ? (
+                <PaddedView>
+                  <Button
+                    onPress={onPressNext}
+                    disabled={disabled}
+                    loading={isLoading}
+                    title={'Login'}
+                    type={'primary'}
+                    pill={false}
+                  />
+                </PaddedView>
               ) : null}
-            </PaddedView>
-          </ScrollView>
-
-          {onPressNext ? (
-            <PaddedView>
-              <Button
-                onPress={onPressNext}
-                disabled={disabled}
-                loading={isLoading}
-                title={'Login'}
-                type={'primary'}
-                pill={false}
-              />
-            </PaddedView>
-          ) : null}
-        </FlexedKeyboardAvoidingView>
-      </FlexedSafeAreaView>
-    </BackgroundComponent>
-    )}
-  </RockAuthedWebBrowser>
-);
+            </FlexedKeyboardAvoidingView>
+          </FlexedSafeAreaView>
+        </BackgroundComponent>
+      )}
+    </RockAuthedWebBrowser>
+  );
 };
 
 PasswordEntry.propTypes = {
