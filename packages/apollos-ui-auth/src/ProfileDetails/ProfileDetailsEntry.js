@@ -36,9 +36,17 @@ const ProfileDetailsEntry = (props) => (
     <DatePicker
       type={'DateInput'}
       placeholder={'Select a date...'}
-      value={moment(
-        get(props.values, 'birthDate', props.defaultDate) || props.defaultDate
-      ).toDate()}
+      value={
+        // If we have either a birthdate or a default date
+        get(props.values, 'birthdate') || props.defaultDate
+          ? // Pass it along to the datepicker
+            moment(
+              get(props.values, 'birthDate', props.defaultDate) ||
+                props.defaultDate
+            ).toDate()
+          : // Otherwise pass null. The datepicker has sane defaults
+            null
+      }
       error={get(props.touched, 'birthDate') && get(props.errors, 'birthDate')}
       displayValue={
         // only show a birthday if we have one.
@@ -81,7 +89,6 @@ ProfileDetailsEntry.defaultProps = {
   prompt:
     'Help us understand who you are so we can connect you with the best ministries and events.',
   genderList: ['Male', 'Female', 'Prefer not to reply'],
-  defaultDate: new Date(),
 };
 
 ProfileDetailsEntry.LegalText = LegalText;
