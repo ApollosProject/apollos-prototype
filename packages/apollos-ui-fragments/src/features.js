@@ -113,9 +113,6 @@ const LITE_FEATURES_FRAGMENT = gql`
       title
       url
     }
-    ... on CommentListFeature {
-      id
-    }
   }
 `;
 
