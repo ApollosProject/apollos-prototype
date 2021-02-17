@@ -25,7 +25,7 @@
     "postinstall": "lerna run build --parallel",
     "generate-docs": "lerna run generate-docs",
     "generate-stories": "lerna run generate-stories",
-    "storybook": "(yarn generate-stories && cd ApollosStorybook && yarn && yarn ios)"
+    "storybook": "(yarn generate-stories && cd ApollosStorybook && yarn && yarn prestart && yarn ios)"
   },
   "resolutions": {
     "babel-core": "7.0.0-bridge.0"
