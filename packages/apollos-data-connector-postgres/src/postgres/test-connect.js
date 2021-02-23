@@ -1,4 +1,4 @@
-import './src/postgres/pgEnum-fix';
+import './pgEnum-fix';
 import { Sequelize } from 'sequelize';
 import ApollosConfig from '@apollosproject/config';
 

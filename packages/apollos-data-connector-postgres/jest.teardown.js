@@ -1,5 +1,5 @@
 import { Client } from 'pg';
-import { dbName } from './test-connect';
+import { dbName } from './src/postgres/test-connect';
 
 const JEST_WORKER_COUNT = 2;
 

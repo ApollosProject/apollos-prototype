@@ -5,7 +5,7 @@ import './pgEnum-fix';
 import { Sequelize, DataTypes } from 'sequelize';
 import { createGlobalId } from '@apollosproject/server-core';
 import ApollosConfig from '@apollosproject/config';
-import connectJest from '../../test-connect';
+import connectJest from './test-connect';
 
 const sequelizeConfigOptions =
   process.env.NODE_ENV === 'test' ? { logging: false } : {};
