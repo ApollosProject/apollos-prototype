@@ -1,6 +1,6 @@
 import React, { useEffect, memo } from 'react';
 import PropTypes from 'prop-types';
-import { NotificationsConsumer } from '@apollosproject/ui-notifications';
+import { PushContext } from '@apollosproject/ui-notifications';
 
 import AskNotifications from './AskNotifications';
 
@@ -55,9 +55,9 @@ const AskNotificationsWithStatus = ({
 
 // eslint-disable-next-line react/display-name
 const AskNotificationsConnected = memo((props) => (
-  <NotificationsConsumer>
+  <PushContext.Consumer>
     {(status) => <AskNotificationsWithStatus {...props} status={status} />}
-  </NotificationsConsumer>
+  </PushContext.Consumer>
 ));
 
 AskNotificationsWithStatus.propTypes = {
