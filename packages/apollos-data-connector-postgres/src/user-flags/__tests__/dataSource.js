@@ -37,8 +37,9 @@ describe('Apollos Postgres Comment Flags DataSource', () => {
       parentId: createGlobalId(123, 'UniversalContentItem'),
     });
   });
+
   afterEach(async () => {
-    await sequelize.dropAllSchemas();
+    await sequelize.drop({});
   });
 
   it('should support flagging comment', async () => {

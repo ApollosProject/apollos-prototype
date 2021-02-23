@@ -1,20 +1,23 @@
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-console */
 
+import './pgEnum-fix';
 import { Sequelize, DataTypes } from 'sequelize';
-import ApollosConfig from '@apollosproject/config';
 import { createGlobalId } from '@apollosproject/server-core';
+import ApollosConfig from '@apollosproject/config';
+import connectJest from '../../test-connect';
 
 const sequelizeConfigOptions =
   process.env.NODE_ENV === 'test' ? { logging: false } : {};
 
 // Use the DB url from the apollos config if provided.
-// Otherwise, use a SQlite database in the server root directory.
-const sequelize = new Sequelize(
-  ApollosConfig?.DATABASE?.URL ||
-    `sqlite:${process.env.PWD}/${process.env.NODE_ENV || 'development'}.db`,
-  { ...sequelizeConfigOptions, ...(ApollosConfig?.DATABASE?.OPTIONS || {}) }
-);
+// Otherwise, connect to the proper test database
+const sequelize = ApollosConfig?.DATABASE?.URL
+  ? new Sequelize(ApollosConfig?.DATABASE?.URL, {
+      ...sequelizeConfigOptions,
+      ...(ApollosConfig?.DATABASE?.OPTIONS || {}),
+    })
+  : connectJest();
 
 class PostgresDataSource {
   initialize(config) {
@@ -107,6 +110,6 @@ const configureModel = (callback) => () => callback({ sequelize });
 
 // Replaces DB migrations - alters the tables so they match the structure defined in code.
 // Potentially harmful - will clober columns and tables that no longer exist - so use with caution.
-const sync = async () => sequelize.sync({ alter: true });
+const sync = async (options) => sequelize.sync({ ...options, alter: true });
 
 export { defineModel, configureModel, sequelize, sync, PostgresDataSource };

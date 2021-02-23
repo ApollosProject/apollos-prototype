@@ -19,16 +19,21 @@ const context = {
 
 describe('Apollos Postgres Comments DatSource', () => {
   beforeEach(async () => {
-    await createModel();
-    await createFlagsModel();
-    await sync();
+    try {
+      await createModel();
+      await createFlagsModel();
+      await sync({ force: true });
+    } catch (e) {
+      console.error(e);
+    }
   });
   afterEach(async () => {
-    await sequelize.dropAllSchemas();
+    await sequelize.drop({});
   });
 
   it('should support creating new comments', async () => {
     const commentDataSource = new CommentDataSource();
+
     commentDataSource.initialize({ context });
 
     const comment = await commentDataSource.addComment({

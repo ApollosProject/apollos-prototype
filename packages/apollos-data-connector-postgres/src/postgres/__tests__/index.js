@@ -1,11 +1,12 @@
 import { DataTypes } from 'sequelize';
 import { createGlobalId } from '@apollosproject/server-core';
-import { defineModel, configureModel, sequelize, sync } from '../index';
+import { sequelize, defineModel, configureModel, sync } from '../index';
 
 describe('Apollos Postgres support', () => {
   afterEach(async () => {
-    await sequelize.dropAllSchemas();
+    await sequelize.drop({});
   });
+
   it('should support defining new models', async () => {
     const makeContentItem = defineModel({
       modelName: 'content_item',
@@ -37,6 +38,7 @@ describe('Apollos Postgres support', () => {
       resolveType: () => 'ContentItem',
       external: true,
     });
+
     makeContentItem();
 
     await sync();
@@ -94,9 +96,7 @@ describe('Apollos Postgres support', () => {
       journal: 'Some journal content',
     });
 
-    // console.log(fakeJournal, fakeContentItem);
-
-    fakeContentItem.addJournal(fakeJournal);
+    await fakeContentItem.addJournal(fakeJournal);
 
     expect(await fakeContentItem.getJournals()).toContainEqual(
       await fakeJournal.reload()

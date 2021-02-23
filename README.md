@@ -9,6 +9,7 @@ Install tools necessary
 - [XCode](https://developer.apple.com/xcode/)
 - [Yarn](https://yarnpkg.com/)
 - [Bundler](https://bundler.io)
+- [PostgreSQL](https://www.postgresql.org/)
 
 Install Dependencies
 
@@ -31,6 +32,12 @@ This will boot generate stories from the different packages and surface them in 
 For more advanced development, you will need to use our templates repo. This will allow you to spin a local version of the API and app.
 
 #### from `apollos-apps`
+
+Get Postgres running locally
+
+```
+brew install postgresql
+```
 
 Register the packages with `linkemon`
 
