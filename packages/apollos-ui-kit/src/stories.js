@@ -19,6 +19,7 @@ function loadStories() {
   require('./ContentCard/ContentCard.stories');
   require('./FeedView/FeedView.stories');
   require('./FlexedView/FlexedView.stories');
+  require('./FollowList/FollowList.stories');
   require('./GradientOverlayImage/GradientOverlayImage.stories');
   require('./HorizontalTileFeed/HorizontalTileFeed.stories');
   require('./Icon/Icon.stories');
@@ -62,6 +63,7 @@ const stories = [
   './ContentCard/ContentCard.stories',
   './FeedView/FeedView.stories',
   './FlexedView/FlexedView.stories',
+  './FollowList/FollowList.stories',
   './GradientOverlayImage/GradientOverlayImage.stories',
   './HorizontalTileFeed/HorizontalTileFeed.stories',
   './Icon/Icon.stories',

@@ -101,10 +101,10 @@ const Button = enhance(
 
     const buttonContent = (
       <ButtonStyles
-        style={style}
         disabled={disabled}
         bordered={bordered}
         pill={pill}
+        style={style}
       >
         {loading ? (
           <InlineActivityIndicator color={accent} />

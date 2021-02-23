@@ -1,0 +1,2558 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FollowList should render 4 items 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": 16,
+      "marginHorizontal": 16,
+      "marginVertical": 12,
+      "shadowColor": "rgba(0, 0, 0, 0.09999999999999998)",
+      "shadowOffset": Object {
+        "height": 2,
+        "width": 0,
+      },
+      "shadowOpacity": 1,
+      "shadowRadius": 8,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "borderRadius": 16,
+        "overflow": "hidden",
+      }
+    }
+  >
+    <View
+      cardPadding={true}
+      style={
+        Object {
+          "paddingHorizontal": 24,
+          "paddingVertical": 24,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "marginBottom": 16,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginBottom": 16,
+          }
+        }
+      >
+        <Image
+          fadeDuration={250}
+          onLoad={[Function]}
+          source={
+            Array [
+              Object {
+                "cache": "force-cache",
+                "uri": "https://picsum.photos/600/400?random",
+              },
+            ]
+          }
+          style={
+            Object {
+              "backgroundColor": "#A5A5A5",
+              "borderRadius": 32,
+              "height": 64,
+              "marginRight": 16,
+              "width": 64,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            numberOfLines={1}
+            style={
+              Object {
+                "color": "#303030",
+                "fontFamily": "InterUI-Medium",
+                "fontSize": 14,
+                "lineHeight": 21,
+              }
+            }
+          >
+            Joshua Imel
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            bordered={false}
+            disabled={false}
+            pill={false}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#A5A5A5",
+                "borderColor": "#A5A5A5",
+                "borderRadius": 8,
+                "borderWidth": 2,
+                "elevation": 2,
+                "flexDirection": "row",
+                "height": 32,
+                "justifyContent": "center",
+                "marginLeft": 8,
+                "opacity": 1,
+                "overflow": "hidden",
+                "paddingHorizontal": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#303030",
+                  "fontFamily": "InterUI-Bold",
+                  "fontSize": 12,
+                  "lineHeight": 18,
+                }
+              }
+            >
+              Hide
+            </Text>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            bordered={false}
+            disabled={false}
+            pill={false}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#00676D",
+                "borderColor": "#00676D",
+                "borderRadius": 8,
+                "borderWidth": 2,
+                "elevation": 2,
+                "flexDirection": "row",
+                "height": 32,
+                "justifyContent": "center",
+                "marginLeft": 8,
+                "opacity": 1,
+                "overflow": "hidden",
+                "paddingHorizontal": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontFamily": "InterUI-Bold",
+                  "fontSize": 12,
+                  "lineHeight": 18,
+                }
+              }
+            >
+              Confirm
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginBottom": 16,
+          }
+        }
+      >
+        <Image
+          fadeDuration={250}
+          onLoad={[Function]}
+          source={
+            Array [
+              Object {
+                "cache": "force-cache",
+                "uri": "https://picsum.photos/600/400?random",
+              },
+            ]
+          }
+          style={
+            Object {
+              "backgroundColor": "#A5A5A5",
+              "borderRadius": 32,
+              "height": 64,
+              "marginRight": 16,
+              "width": 64,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            numberOfLines={1}
+            style={
+              Object {
+                "color": "#303030",
+                "fontFamily": "InterUI-Medium",
+                "fontSize": 14,
+                "lineHeight": 21,
+              }
+            }
+          >
+            Joe Schmoe
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            bordered={false}
+            disabled={false}
+            pill={false}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#A5A5A5",
+                "borderColor": "#A5A5A5",
+                "borderRadius": 8,
+                "borderWidth": 2,
+                "elevation": 2,
+                "flexDirection": "row",
+                "height": 32,
+                "justifyContent": "center",
+                "marginLeft": 8,
+                "opacity": 1,
+                "overflow": "hidden",
+                "paddingHorizontal": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#303030",
+                  "fontFamily": "InterUI-Bold",
+                  "fontSize": 12,
+                  "lineHeight": 18,
+                }
+              }
+            >
+              Hide
+            </Text>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            bordered={false}
+            disabled={false}
+            pill={false}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#00676D",
+                "borderColor": "#00676D",
+                "borderRadius": 8,
+                "borderWidth": 2,
+                "elevation": 2,
+                "flexDirection": "row",
+                "height": 32,
+                "justifyContent": "center",
+                "marginLeft": 8,
+                "opacity": 1,
+                "overflow": "hidden",
+                "paddingHorizontal": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontFamily": "InterUI-Bold",
+                  "fontSize": 12,
+                  "lineHeight": 18,
+                }
+              }
+            >
+              Confirm
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginBottom": 16,
+          }
+        }
+      >
+        <Image
+          fadeDuration={250}
+          onLoad={[Function]}
+          source={
+            Array [
+              Object {
+                "cache": "force-cache",
+                "uri": "https://picsum.photos/600/400?random",
+              },
+            ]
+          }
+          style={
+            Object {
+              "backgroundColor": "#A5A5A5",
+              "borderRadius": 32,
+              "height": 64,
+              "marginRight": 16,
+              "width": 64,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            numberOfLines={1}
+            style={
+              Object {
+                "color": "#303030",
+                "fontFamily": "InterUI-Medium",
+                "fontSize": 14,
+                "lineHeight": 21,
+              }
+            }
+          >
+            John Doe
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            bordered={false}
+            disabled={false}
+            pill={false}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#00676D",
+                "borderColor": "#00676D",
+                "borderRadius": 8,
+                "borderWidth": 2,
+                "elevation": 2,
+                "flexDirection": "row",
+                "height": 32,
+                "justifyContent": "center",
+                "marginLeft": 8,
+                "opacity": 1,
+                "overflow": "hidden",
+                "paddingHorizontal": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontFamily": "InterUI-Bold",
+                  "fontSize": 12,
+                  "lineHeight": 18,
+                }
+              }
+            >
+              Follow
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginBottom": 16,
+          }
+        }
+      >
+        <Image
+          fadeDuration={250}
+          onLoad={[Function]}
+          source={
+            Array [
+              Object {
+                "cache": "force-cache",
+                "uri": "https://picsum.photos/600/400?random",
+              },
+            ]
+          }
+          style={
+            Object {
+              "backgroundColor": "#A5A5A5",
+              "borderRadius": 32,
+              "height": 64,
+              "marginRight": 16,
+              "width": 64,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            numberOfLines={1}
+            style={
+              Object {
+                "color": "#303030",
+                "fontFamily": "InterUI-Medium",
+                "fontSize": 14,
+                "lineHeight": 21,
+              }
+            }
+          >
+            Billy Bob
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            bordered={false}
+            disabled={false}
+            pill={false}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#00676D",
+                "borderColor": "#00676D",
+                "borderRadius": 8,
+                "borderWidth": 2,
+                "elevation": 2,
+                "flexDirection": "row",
+                "height": 32,
+                "justifyContent": "center",
+                "marginLeft": 8,
+                "opacity": 1,
+                "overflow": "hidden",
+                "paddingHorizontal": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontFamily": "InterUI-Bold",
+                  "fontSize": 12,
+                  "lineHeight": 18,
+                }
+              }
+            >
+              Follow
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`FollowList should render a loading state 1`] = `
+<View
+  isLoading={true}
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": 16,
+      "marginHorizontal": 16,
+      "marginVertical": 12,
+      "shadowColor": "rgba(0, 0, 0, 0.09999999999999998)",
+      "shadowOffset": Object {
+        "height": 2,
+        "width": 0,
+      },
+      "shadowOpacity": 1,
+      "shadowRadius": 8,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "borderRadius": 16,
+        "overflow": "hidden",
+      }
+    }
+  >
+    <View
+      cardPadding={true}
+      style={
+        Object {
+          "paddingHorizontal": 24,
+          "paddingVertical": 24,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "marginBottom": 16,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginBottom": 16,
+          }
+        }
+      >
+        <Image
+          fadeDuration={250}
+          onLoad={[Function]}
+          source={
+            Array [
+              Object {
+                "cache": "force-cache",
+                "uri": "https://picsum.photos/600/400?random",
+              },
+            ]
+          }
+          style={
+            Object {
+              "backgroundColor": "#A5A5A5",
+              "borderRadius": 32,
+              "height": 64,
+              "marginRight": 16,
+              "width": 64,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignSelf": "stretch",
+                "backgroundColor": "#A5A5A5",
+                "borderRadius": 16,
+                "height": 14,
+                "marginVertical": 3.5,
+                "width": "60%",
+              }
+            }
+          />
+        </View>
+        <View
+          style={
+            Object {
+              "alignSelf": "stretch",
+              "backgroundColor": "#A5A5A5",
+              "borderRadius": 8,
+              "height": 32,
+              "marginLeft": 8,
+              "paddingHorizontal": 8,
+              "width": 64,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "alignSelf": "stretch",
+              "backgroundColor": "#A5A5A5",
+              "borderRadius": 8,
+              "height": 32,
+              "marginLeft": 8,
+              "paddingHorizontal": 8,
+              "width": 64,
+            }
+          }
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginBottom": 16,
+          }
+        }
+      >
+        <Image
+          fadeDuration={250}
+          onLoad={[Function]}
+          source={
+            Array [
+              Object {
+                "cache": "force-cache",
+                "uri": "https://picsum.photos/600/400?random",
+              },
+            ]
+          }
+          style={
+            Object {
+              "backgroundColor": "#A5A5A5",
+              "borderRadius": 32,
+              "height": 64,
+              "marginRight": 16,
+              "width": 64,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignSelf": "stretch",
+                "backgroundColor": "#A5A5A5",
+                "borderRadius": 16,
+                "height": 14,
+                "marginVertical": 3.5,
+                "width": "60%",
+              }
+            }
+          />
+        </View>
+        <View
+          style={
+            Object {
+              "alignSelf": "stretch",
+              "backgroundColor": "#A5A5A5",
+              "borderRadius": 8,
+              "height": 32,
+              "marginLeft": 8,
+              "paddingHorizontal": 8,
+              "width": 64,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "alignSelf": "stretch",
+              "backgroundColor": "#A5A5A5",
+              "borderRadius": 8,
+              "height": 32,
+              "marginLeft": 8,
+              "paddingHorizontal": 8,
+              "width": 64,
+            }
+          }
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`FollowList should render as a card 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": 16,
+      "marginHorizontal": 16,
+      "marginVertical": 12,
+      "shadowColor": "rgba(0, 0, 0, 0.09999999999999998)",
+      "shadowOffset": Object {
+        "height": 2,
+        "width": 0,
+      },
+      "shadowOpacity": 1,
+      "shadowRadius": 8,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "borderRadius": 16,
+        "overflow": "hidden",
+      }
+    }
+  >
+    <View
+      cardPadding={true}
+      style={
+        Object {
+          "paddingHorizontal": 24,
+          "paddingVertical": 24,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "marginBottom": 16,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginBottom": 16,
+          }
+        }
+      >
+        <Image
+          fadeDuration={250}
+          onLoad={[Function]}
+          source={
+            Array [
+              Object {
+                "cache": "force-cache",
+                "uri": "https://picsum.photos/600/400?random",
+              },
+            ]
+          }
+          style={
+            Object {
+              "backgroundColor": "#A5A5A5",
+              "borderRadius": 32,
+              "height": 64,
+              "marginRight": 16,
+              "width": 64,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            numberOfLines={1}
+            style={
+              Object {
+                "color": "#303030",
+                "fontFamily": "InterUI-Medium",
+                "fontSize": 14,
+                "lineHeight": 21,
+              }
+            }
+          >
+            Joshua Imel
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            bordered={false}
+            disabled={false}
+            pill={false}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#A5A5A5",
+                "borderColor": "#A5A5A5",
+                "borderRadius": 8,
+                "borderWidth": 2,
+                "elevation": 2,
+                "flexDirection": "row",
+                "height": 32,
+                "justifyContent": "center",
+                "marginLeft": 8,
+                "opacity": 1,
+                "overflow": "hidden",
+                "paddingHorizontal": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#303030",
+                  "fontFamily": "InterUI-Bold",
+                  "fontSize": 12,
+                  "lineHeight": 18,
+                }
+              }
+            >
+              Hide
+            </Text>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            bordered={false}
+            disabled={false}
+            pill={false}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#00676D",
+                "borderColor": "#00676D",
+                "borderRadius": 8,
+                "borderWidth": 2,
+                "elevation": 2,
+                "flexDirection": "row",
+                "height": 32,
+                "justifyContent": "center",
+                "marginLeft": 8,
+                "opacity": 1,
+                "overflow": "hidden",
+                "paddingHorizontal": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontFamily": "InterUI-Bold",
+                  "fontSize": 12,
+                  "lineHeight": 18,
+                }
+              }
+            >
+              Confirm
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginBottom": 16,
+          }
+        }
+      >
+        <Image
+          fadeDuration={250}
+          onLoad={[Function]}
+          source={
+            Array [
+              Object {
+                "cache": "force-cache",
+                "uri": "https://picsum.photos/600/400?random",
+              },
+            ]
+          }
+          style={
+            Object {
+              "backgroundColor": "#A5A5A5",
+              "borderRadius": 32,
+              "height": 64,
+              "marginRight": 16,
+              "width": 64,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            numberOfLines={1}
+            style={
+              Object {
+                "color": "#303030",
+                "fontFamily": "InterUI-Medium",
+                "fontSize": 14,
+                "lineHeight": 21,
+              }
+            }
+          >
+            Joe Schmoe
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            bordered={false}
+            disabled={false}
+            pill={false}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#A5A5A5",
+                "borderColor": "#A5A5A5",
+                "borderRadius": 8,
+                "borderWidth": 2,
+                "elevation": 2,
+                "flexDirection": "row",
+                "height": 32,
+                "justifyContent": "center",
+                "marginLeft": 8,
+                "opacity": 1,
+                "overflow": "hidden",
+                "paddingHorizontal": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#303030",
+                  "fontFamily": "InterUI-Bold",
+                  "fontSize": 12,
+                  "lineHeight": 18,
+                }
+              }
+            >
+              Hide
+            </Text>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            bordered={false}
+            disabled={false}
+            pill={false}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#00676D",
+                "borderColor": "#00676D",
+                "borderRadius": 8,
+                "borderWidth": 2,
+                "elevation": 2,
+                "flexDirection": "row",
+                "height": 32,
+                "justifyContent": "center",
+                "marginLeft": 8,
+                "opacity": 1,
+                "overflow": "hidden",
+                "paddingHorizontal": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontFamily": "InterUI-Bold",
+                  "fontSize": 12,
+                  "lineHeight": 18,
+                }
+              }
+            >
+              Confirm
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`FollowList should render items with Follow button 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": 16,
+      "marginHorizontal": 16,
+      "marginVertical": 12,
+      "shadowColor": "rgba(0, 0, 0, 0.09999999999999998)",
+      "shadowOffset": Object {
+        "height": 2,
+        "width": 0,
+      },
+      "shadowOpacity": 1,
+      "shadowRadius": 8,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "borderRadius": 16,
+        "overflow": "hidden",
+      }
+    }
+  >
+    <View
+      cardPadding={true}
+      style={
+        Object {
+          "paddingHorizontal": 24,
+          "paddingVertical": 24,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "marginBottom": 16,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginBottom": 16,
+          }
+        }
+      >
+        <Image
+          fadeDuration={250}
+          onLoad={[Function]}
+          source={
+            Array [
+              Object {
+                "cache": "force-cache",
+                "uri": "https://picsum.photos/600/400?random",
+              },
+            ]
+          }
+          style={
+            Object {
+              "backgroundColor": "#A5A5A5",
+              "borderRadius": 32,
+              "height": 64,
+              "marginRight": 16,
+              "width": 64,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            numberOfLines={1}
+            style={
+              Object {
+                "color": "#303030",
+                "fontFamily": "InterUI-Medium",
+                "fontSize": 14,
+                "lineHeight": 21,
+              }
+            }
+          >
+            John Doe
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            bordered={false}
+            disabled={false}
+            pill={false}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#00676D",
+                "borderColor": "#00676D",
+                "borderRadius": 8,
+                "borderWidth": 2,
+                "elevation": 2,
+                "flexDirection": "row",
+                "height": 32,
+                "justifyContent": "center",
+                "marginLeft": 8,
+                "opacity": 1,
+                "overflow": "hidden",
+                "paddingHorizontal": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontFamily": "InterUI-Bold",
+                  "fontSize": 12,
+                  "lineHeight": 18,
+                }
+              }
+            >
+              Follow
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginBottom": 16,
+          }
+        }
+      >
+        <Image
+          fadeDuration={250}
+          onLoad={[Function]}
+          source={
+            Array [
+              Object {
+                "cache": "force-cache",
+                "uri": "https://picsum.photos/600/400?random",
+              },
+            ]
+          }
+          style={
+            Object {
+              "backgroundColor": "#A5A5A5",
+              "borderRadius": 32,
+              "height": 64,
+              "marginRight": 16,
+              "width": 64,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            numberOfLines={1}
+            style={
+              Object {
+                "color": "#303030",
+                "fontFamily": "InterUI-Medium",
+                "fontSize": 14,
+                "lineHeight": 21,
+              }
+            }
+          >
+            Billy Bob
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            bordered={false}
+            disabled={false}
+            pill={false}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#00676D",
+                "borderColor": "#00676D",
+                "borderRadius": 8,
+                "borderWidth": 2,
+                "elevation": 2,
+                "flexDirection": "row",
+                "height": 32,
+                "justifyContent": "center",
+                "marginLeft": 8,
+                "opacity": 1,
+                "overflow": "hidden",
+                "paddingHorizontal": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontFamily": "InterUI-Bold",
+                  "fontSize": 12,
+                  "lineHeight": 18,
+                }
+              }
+            >
+              Follow
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`FollowList should render items with Hide and Confirm buttons 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": 16,
+      "marginHorizontal": 16,
+      "marginVertical": 12,
+      "shadowColor": "rgba(0, 0, 0, 0.09999999999999998)",
+      "shadowOffset": Object {
+        "height": 2,
+        "width": 0,
+      },
+      "shadowOpacity": 1,
+      "shadowRadius": 8,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "borderRadius": 16,
+        "overflow": "hidden",
+      }
+    }
+  >
+    <View
+      cardPadding={true}
+      style={
+        Object {
+          "paddingHorizontal": 24,
+          "paddingVertical": 24,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "marginBottom": 16,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginBottom": 16,
+          }
+        }
+      >
+        <Image
+          fadeDuration={250}
+          onLoad={[Function]}
+          source={
+            Array [
+              Object {
+                "cache": "force-cache",
+                "uri": "https://picsum.photos/600/400?random",
+              },
+            ]
+          }
+          style={
+            Object {
+              "backgroundColor": "#A5A5A5",
+              "borderRadius": 32,
+              "height": 64,
+              "marginRight": 16,
+              "width": 64,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            numberOfLines={1}
+            style={
+              Object {
+                "color": "#303030",
+                "fontFamily": "InterUI-Medium",
+                "fontSize": 14,
+                "lineHeight": 21,
+              }
+            }
+          >
+            Joshua Imel
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            bordered={false}
+            disabled={false}
+            pill={false}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#A5A5A5",
+                "borderColor": "#A5A5A5",
+                "borderRadius": 8,
+                "borderWidth": 2,
+                "elevation": 2,
+                "flexDirection": "row",
+                "height": 32,
+                "justifyContent": "center",
+                "marginLeft": 8,
+                "opacity": 1,
+                "overflow": "hidden",
+                "paddingHorizontal": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#303030",
+                  "fontFamily": "InterUI-Bold",
+                  "fontSize": 12,
+                  "lineHeight": 18,
+                }
+              }
+            >
+              Hide
+            </Text>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            bordered={false}
+            disabled={false}
+            pill={false}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#00676D",
+                "borderColor": "#00676D",
+                "borderRadius": 8,
+                "borderWidth": 2,
+                "elevation": 2,
+                "flexDirection": "row",
+                "height": 32,
+                "justifyContent": "center",
+                "marginLeft": 8,
+                "opacity": 1,
+                "overflow": "hidden",
+                "paddingHorizontal": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontFamily": "InterUI-Bold",
+                  "fontSize": 12,
+                  "lineHeight": 18,
+                }
+              }
+            >
+              Confirm
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginBottom": 16,
+          }
+        }
+      >
+        <Image
+          fadeDuration={250}
+          onLoad={[Function]}
+          source={
+            Array [
+              Object {
+                "cache": "force-cache",
+                "uri": "https://picsum.photos/600/400?random",
+              },
+            ]
+          }
+          style={
+            Object {
+              "backgroundColor": "#A5A5A5",
+              "borderRadius": 32,
+              "height": 64,
+              "marginRight": 16,
+              "width": 64,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            numberOfLines={1}
+            style={
+              Object {
+                "color": "#303030",
+                "fontFamily": "InterUI-Medium",
+                "fontSize": 14,
+                "lineHeight": 21,
+              }
+            }
+          >
+            Joe Schmoe
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            bordered={false}
+            disabled={false}
+            pill={false}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#A5A5A5",
+                "borderColor": "#A5A5A5",
+                "borderRadius": 8,
+                "borderWidth": 2,
+                "elevation": 2,
+                "flexDirection": "row",
+                "height": 32,
+                "justifyContent": "center",
+                "marginLeft": 8,
+                "opacity": 1,
+                "overflow": "hidden",
+                "paddingHorizontal": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#303030",
+                  "fontFamily": "InterUI-Bold",
+                  "fontSize": 12,
+                  "lineHeight": 18,
+                }
+              }
+            >
+              Hide
+            </Text>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            bordered={false}
+            disabled={false}
+            pill={false}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#00676D",
+                "borderColor": "#00676D",
+                "borderRadius": 8,
+                "borderWidth": 2,
+                "elevation": 2,
+                "flexDirection": "row",
+                "height": 32,
+                "justifyContent": "center",
+                "marginLeft": 8,
+                "opacity": 1,
+                "overflow": "hidden",
+                "paddingHorizontal": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontFamily": "InterUI-Bold",
+                  "fontSize": 12,
+                  "lineHeight": 18,
+                }
+              }
+            >
+              Confirm
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`FollowList should render with a header 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": 16,
+      "marginHorizontal": 16,
+      "marginVertical": 12,
+      "shadowColor": "rgba(0, 0, 0, 0.09999999999999998)",
+      "shadowOffset": Object {
+        "height": 2,
+        "width": 0,
+      },
+      "shadowOpacity": 1,
+      "shadowRadius": 8,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "borderRadius": 16,
+        "overflow": "hidden",
+      }
+    }
+  >
+    <View
+      cardPadding={true}
+      style={
+        Object {
+          "paddingHorizontal": 24,
+          "paddingVertical": 24,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "marginBottom": 16,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#303030",
+              "fontFamily": "InterUI-Bold",
+              "fontSize": 16,
+              "lineHeight": 24,
+            }
+          }
+        >
+          Follow Requests
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginBottom": 16,
+          }
+        }
+      >
+        <Image
+          fadeDuration={250}
+          onLoad={[Function]}
+          source={
+            Array [
+              Object {
+                "cache": "force-cache",
+                "uri": "https://picsum.photos/600/400?random",
+              },
+            ]
+          }
+          style={
+            Object {
+              "backgroundColor": "#A5A5A5",
+              "borderRadius": 32,
+              "height": 64,
+              "marginRight": 16,
+              "width": 64,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            numberOfLines={1}
+            style={
+              Object {
+                "color": "#303030",
+                "fontFamily": "InterUI-Medium",
+                "fontSize": 14,
+                "lineHeight": 21,
+              }
+            }
+          >
+            Joshua Imel
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            bordered={false}
+            disabled={false}
+            pill={false}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#A5A5A5",
+                "borderColor": "#A5A5A5",
+                "borderRadius": 8,
+                "borderWidth": 2,
+                "elevation": 2,
+                "flexDirection": "row",
+                "height": 32,
+                "justifyContent": "center",
+                "marginLeft": 8,
+                "opacity": 1,
+                "overflow": "hidden",
+                "paddingHorizontal": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#303030",
+                  "fontFamily": "InterUI-Bold",
+                  "fontSize": 12,
+                  "lineHeight": 18,
+                }
+              }
+            >
+              Hide
+            </Text>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            bordered={false}
+            disabled={false}
+            pill={false}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#00676D",
+                "borderColor": "#00676D",
+                "borderRadius": 8,
+                "borderWidth": 2,
+                "elevation": 2,
+                "flexDirection": "row",
+                "height": 32,
+                "justifyContent": "center",
+                "marginLeft": 8,
+                "opacity": 1,
+                "overflow": "hidden",
+                "paddingHorizontal": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontFamily": "InterUI-Bold",
+                  "fontSize": 12,
+                  "lineHeight": 18,
+                }
+              }
+            >
+              Confirm
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginBottom": 16,
+          }
+        }
+      >
+        <Image
+          fadeDuration={250}
+          onLoad={[Function]}
+          source={
+            Array [
+              Object {
+                "cache": "force-cache",
+                "uri": "https://picsum.photos/600/400?random",
+              },
+            ]
+          }
+          style={
+            Object {
+              "backgroundColor": "#A5A5A5",
+              "borderRadius": 32,
+              "height": 64,
+              "marginRight": 16,
+              "width": 64,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            numberOfLines={1}
+            style={
+              Object {
+                "color": "#303030",
+                "fontFamily": "InterUI-Medium",
+                "fontSize": 14,
+                "lineHeight": 21,
+              }
+            }
+          >
+            Joe Schmoe
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            bordered={false}
+            disabled={false}
+            pill={false}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#A5A5A5",
+                "borderColor": "#A5A5A5",
+                "borderRadius": 8,
+                "borderWidth": 2,
+                "elevation": 2,
+                "flexDirection": "row",
+                "height": 32,
+                "justifyContent": "center",
+                "marginLeft": 8,
+                "opacity": 1,
+                "overflow": "hidden",
+                "paddingHorizontal": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#303030",
+                  "fontFamily": "InterUI-Bold",
+                  "fontSize": 12,
+                  "lineHeight": 18,
+                }
+              }
+            >
+              Hide
+            </Text>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            bordered={false}
+            disabled={false}
+            pill={false}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#00676D",
+                "borderColor": "#00676D",
+                "borderRadius": 8,
+                "borderWidth": 2,
+                "elevation": 2,
+                "flexDirection": "row",
+                "height": 32,
+                "justifyContent": "center",
+                "marginLeft": 8,
+                "opacity": 1,
+                "overflow": "hidden",
+                "paddingHorizontal": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontFamily": "InterUI-Bold",
+                  "fontSize": 12,
+                  "lineHeight": 18,
+                }
+              }
+            >
+              Confirm
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`FollowList should render with onPressFollowListButton 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": 16,
+      "marginHorizontal": 16,
+      "marginVertical": 12,
+      "shadowColor": "rgba(0, 0, 0, 0.09999999999999998)",
+      "shadowOffset": Object {
+        "height": 2,
+        "width": 0,
+      },
+      "shadowOpacity": 1,
+      "shadowRadius": 8,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "borderRadius": 16,
+        "overflow": "hidden",
+      }
+    }
+  >
+    <View
+      cardPadding={true}
+      style={
+        Object {
+          "paddingHorizontal": 24,
+          "paddingVertical": 24,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "marginBottom": 16,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginBottom": 16,
+          }
+        }
+      >
+        <Image
+          fadeDuration={250}
+          onLoad={[Function]}
+          source={
+            Array [
+              Object {
+                "cache": "force-cache",
+                "uri": "https://picsum.photos/600/400?random",
+              },
+            ]
+          }
+          style={
+            Object {
+              "backgroundColor": "#A5A5A5",
+              "borderRadius": 32,
+              "height": 64,
+              "marginRight": 16,
+              "width": 64,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            numberOfLines={1}
+            style={
+              Object {
+                "color": "#303030",
+                "fontFamily": "InterUI-Medium",
+                "fontSize": 14,
+                "lineHeight": 21,
+              }
+            }
+          >
+            Joshua Imel
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            bordered={false}
+            disabled={false}
+            pill={false}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#A5A5A5",
+                "borderColor": "#A5A5A5",
+                "borderRadius": 8,
+                "borderWidth": 2,
+                "elevation": 2,
+                "flexDirection": "row",
+                "height": 32,
+                "justifyContent": "center",
+                "marginLeft": 8,
+                "opacity": 1,
+                "overflow": "hidden",
+                "paddingHorizontal": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#303030",
+                  "fontFamily": "InterUI-Bold",
+                  "fontSize": 12,
+                  "lineHeight": 18,
+                }
+              }
+            >
+              Hide
+            </Text>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            bordered={false}
+            disabled={false}
+            pill={false}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#00676D",
+                "borderColor": "#00676D",
+                "borderRadius": 8,
+                "borderWidth": 2,
+                "elevation": 2,
+                "flexDirection": "row",
+                "height": 32,
+                "justifyContent": "center",
+                "marginLeft": 8,
+                "opacity": 1,
+                "overflow": "hidden",
+                "paddingHorizontal": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontFamily": "InterUI-Bold",
+                  "fontSize": 12,
+                  "lineHeight": 18,
+                }
+              }
+            >
+              Confirm
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginBottom": 16,
+          }
+        }
+      >
+        <Image
+          fadeDuration={250}
+          onLoad={[Function]}
+          source={
+            Array [
+              Object {
+                "cache": "force-cache",
+                "uri": "https://picsum.photos/600/400?random",
+              },
+            ]
+          }
+          style={
+            Object {
+              "backgroundColor": "#A5A5A5",
+              "borderRadius": 32,
+              "height": 64,
+              "marginRight": 16,
+              "width": 64,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            numberOfLines={1}
+            style={
+              Object {
+                "color": "#303030",
+                "fontFamily": "InterUI-Medium",
+                "fontSize": 14,
+                "lineHeight": 21,
+              }
+            }
+          >
+            Joe Schmoe
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            bordered={false}
+            disabled={false}
+            pill={false}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#A5A5A5",
+                "borderColor": "#A5A5A5",
+                "borderRadius": 8,
+                "borderWidth": 2,
+                "elevation": 2,
+                "flexDirection": "row",
+                "height": 32,
+                "justifyContent": "center",
+                "marginLeft": 8,
+                "opacity": 1,
+                "overflow": "hidden",
+                "paddingHorizontal": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#303030",
+                  "fontFamily": "InterUI-Bold",
+                  "fontSize": 12,
+                  "lineHeight": 18,
+                }
+              }
+            >
+              Hide
+            </Text>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            bordered={false}
+            disabled={false}
+            pill={false}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#00676D",
+                "borderColor": "#00676D",
+                "borderRadius": 8,
+                "borderWidth": 2,
+                "elevation": 2,
+                "flexDirection": "row",
+                "height": 32,
+                "justifyContent": "center",
+                "marginLeft": 8,
+                "opacity": 1,
+                "overflow": "hidden",
+                "paddingHorizontal": 8,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontFamily": "InterUI-Bold",
+                  "fontSize": 12,
+                  "lineHeight": 18,
+                }
+              }
+            >
+              Confirm
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View
+          bordered={true}
+          disabled={false}
+          pill={false}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "#A5A5A5",
+              "borderRadius": 16,
+              "borderWidth": 2,
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "center",
+              "marginTop": 8,
+              "opacity": 1,
+              "overflow": "hidden",
+              "paddingHorizontal": 16,
+              "width": "100%",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#A5A5A5",
+                "fontFamily": "InterUI-Bold",
+                "fontSize": 16,
+                "lineHeight": 24,
+              }
+            }
+          >
+            Press Me!
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
