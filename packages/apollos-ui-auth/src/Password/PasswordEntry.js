@@ -19,6 +19,8 @@ import {
   FlexedKeyboardAvoidingView,
 } from '../styles';
 
+console.log(RockAuthedWebBrowser);
+
 const PasswordEntry = ({
   passwordTitleText,
   passwordPromptText,

@@ -5,10 +5,6 @@ import { Providers } from '@apollosproject/ui-test-utils';
 
 import { LikeIcon } from '.';
 
-jest.mock('@apollosproject/ui-auth', () => ({
-  ProtectedTouchable: () => null,
-}));
-
 describe('the LikeButton component', () => {
   it('should render a Like', () => {
     const tree = renderer.create(

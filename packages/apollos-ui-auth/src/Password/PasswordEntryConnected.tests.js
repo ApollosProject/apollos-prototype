@@ -7,13 +7,12 @@ import PasswordEntryConnected from './PasswordEntryConnected';
 
 describe('ui-auth/Password/PasswordEntryConnected', () => {
   it('should render', () => {
-    const navigation = { navigate: jest.fn() };
-
     const tree = renderer.create(
       <Providers>
         <PasswordEntryConnected
           handleForgotPassword={jest.fn()}
-          navigation={navigation}
+          navigation={{ navigate: () => null }}
+          route={{ params: { forgotPasswordURL: 'forgotpassword.com' } }}
         />
       </Providers>
     );
