@@ -27,12 +27,6 @@ const DarkThemeExample = withThemeMixin({
   type: 'dark',
 })(ThemeExample);
 
-// Needed in order to set a return value of 'light' or 'dark'
-const mockColorScheme = jest.fn();
-jest.mock('react-native-appearance', () => ({
-  useColorScheme: mockColorScheme,
-}));
-
 describe('ThemeProvider', () => {
   it('defaults to user settings', () => {
     const tree = renderer.create(
@@ -43,7 +37,6 @@ describe('ThemeProvider', () => {
     expect(tree).toMatchSnapshot();
   });
   it('renders in light theme', () => {
-    mockColorScheme.mockImplementationOnce(() => 'light');
     const tree = renderer.create(
       <ThemeProvider>
         <LightThemeExample />
@@ -52,7 +45,6 @@ describe('ThemeProvider', () => {
     expect(tree).toMatchSnapshot();
   });
   it('renders in dark theme', () => {
-    mockColorScheme.mockImplementationOnce(() => 'dark');
     const tree = renderer.create(
       <ThemeProvider>
         <DarkThemeExample />
