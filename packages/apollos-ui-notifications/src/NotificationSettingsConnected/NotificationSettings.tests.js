@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Providers from '@apollosproject/ui-test-utils';
+import { Providers } from '@apollosproject/ui-kit';
 
 import NotificationSettings from './NotificationSettings';
 
