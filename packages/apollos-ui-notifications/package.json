@@ -43,12 +43,14 @@
     "@apollosproject/ui-auth": "*",
     "react": "*",
     "react-native": "*",
-    "react-native-onesignal": "*"
+    "react-native-onesignal": "*",
+    "react-native-permissions": "^2.0.5"
   },
   "dependencies": {
     "formik": "1.5.1",
     "graphql-tag": "2.9.2",
     "lodash": "^4.17.11",
+    "react-native-permissions": "^2.0.5",
     "url": "^0.11.0"
   },
   "devDependencies": {

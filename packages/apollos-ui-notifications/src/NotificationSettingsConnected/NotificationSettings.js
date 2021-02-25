@@ -1,24 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Switch } from '@apollosproject/ui-kit';
-import { Formik } from 'formik';
+import { Switch, PaddedView } from '@apollosproject/ui-kit';
 
 const NotificationSettings = ({
   allNotificationsEnabled,
   toggleNotifications,
 }) => (
-  <Formik initialValues={{ allNotifications: allNotificationsEnabled }}>
-    {({ setFieldValue, values }) => (
-      <Switch
-        value={values.allNotifications}
-        label={'Notifications'}
-        onValueChange={async () =>
-          (await toggleNotifications()) &&
-          setFieldValue('allNotifications', !values.allNotifications)
-        }
-      />
-    )}
-  </Formik>
+  <PaddedView>
+    <Switch
+      value={allNotificationsEnabled}
+      label={'Notifications'}
+      onValueChange={() => {
+        toggleNotifications();
+      }}
+    />
+  </PaddedView>
 );
 
 NotificationSettings.propTypes = {

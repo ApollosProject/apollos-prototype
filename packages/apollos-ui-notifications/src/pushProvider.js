@@ -7,7 +7,8 @@ export const PushContext = React.createContext({
   hasPrompted: true,
   hasPushPermission: true,
   loading: true,
-  checkPermissions: () => {},
+  checkPermissions: () => {}, // deprecated, confusing name
+  updatePermissionStatus: () => {},
 });
 
 class Provider extends PureComponent {
@@ -22,6 +23,7 @@ class Provider extends PureComponent {
       hasPrompted: null,
       hasPushPermission: null,
       checkPermissions: () => {},
+      updatePermissionStatus: () => {},
     };
   }
 
@@ -33,6 +35,7 @@ class Provider extends PureComponent {
         hasPrompted: promptRes,
         hasPushPermission: permissionRes,
         checkPermissions: this.update,
+        updatePermissionStatus: this.update,
         loading: false,
       });
     } catch (e) {
@@ -40,7 +43,7 @@ class Provider extends PureComponent {
     }
   }
 
-  update = () => {
+  update = (onUpdate = () => null) => {
     this.setState(
       {
         loading: true,
@@ -55,6 +58,7 @@ class Provider extends PureComponent {
             });
           });
         });
+        onUpdate();
       }
     );
   };

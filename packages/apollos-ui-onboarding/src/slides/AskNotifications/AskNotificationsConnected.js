@@ -35,7 +35,9 @@ const AskNotificationsWithStatus = ({
   return (
     <Component
       isLoading={status.loading}
-      onPressButton={() => onRequestPushPermissions(status.checkPermissions)}
+      onPressButton={() =>
+        onRequestPushPermissions(status.updatePermissionStatus)
+      }
       buttonDisabled={status.hasPushPermission}
       buttonText={getButtonText({
         hasPrompted: status.hasPrompted,
@@ -74,6 +76,7 @@ AskNotificationsWithStatus.propTypes = {
     hasPrompted: PropTypes.bool,
     hasPushPermission: PropTypes.bool,
     checkPermissions: PropTypes.func,
+    updatePermissionStatus: PropTypes.func,
     loading: PropTypes.bool,
   }),
 };
