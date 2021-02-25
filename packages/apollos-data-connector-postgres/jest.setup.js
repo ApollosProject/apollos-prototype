@@ -1,9 +1,7 @@
 import { Client } from 'pg';
 import { dbName } from './src/postgres/test-connect';
 
-const JEST_WORKER_COUNT = 2;
-
-export default async () => {
+export default async ({ maxWorkers }) => {
   const client = new Client({
     host: 'localhost',
     database: 'postgres',
@@ -18,7 +16,7 @@ export default async () => {
 
   let count = 1;
 
-  while (count <= JEST_WORKER_COUNT) {
+  while (count <= maxWorkers) {
     const name = dbName(count);
 
     try {
@@ -31,7 +29,16 @@ export default async () => {
 
     try {
       // eslint-disable-next-line no-await-in-loop
-      await client.query(`CREATE DATABASE ${name};`);
+      const create = await client.query(`CREATE DATABASE ${name};`);
+      const dbTestClient = new Client({
+        host: 'localhost',
+        database: dbName(count),
+      });
+      await dbTestClient.connect();
+      const uuid = await dbTestClient.query(
+        `CREATE EXTENSION IF NOT EXISTS "uuid-ossp";`
+      );
+      await dbTestClient.end();
     } catch (e) {
       console.error(`Failed to create test database ${name}`);
       console.error(e);

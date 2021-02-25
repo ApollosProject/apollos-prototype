@@ -16,6 +16,7 @@ const SearchActions = memo(
     onLayout,
     screenBackgroundColor,
     showClearSearchButton,
+    showCancelButton,
   }) => (
     <SmokeAndMirrorsWrapper screenBackgroundColor={screenBackgroundColor}>
       <ClearSearchButtonBackground>
@@ -26,9 +27,11 @@ const SearchActions = memo(
         />
       </ClearSearchButtonBackground>
 
-      <CancelButton onPress={onPressCancel} onLayout={onLayout}>
-        {cancelButtonText}
-      </CancelButton>
+      {showCancelButton && (
+        <CancelButton onPress={onPressCancel} onLayout={onLayout}>
+          {cancelButtonText}
+        </CancelButton>
+      )}
     </SmokeAndMirrorsWrapper>
   )
 );
@@ -43,6 +46,7 @@ SearchActions.propTypes = {
    * than theme.colors.background.paper. */
   screenBackgroundColor: PropTypes.string,
   showClearSearchButton: PropTypes.bool,
+  showCancelButton: PropTypes.bool,
 };
 
 SearchActions.displayName = 'SearchActions';

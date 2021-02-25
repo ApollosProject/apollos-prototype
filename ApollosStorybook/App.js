@@ -1,6 +1,4 @@
-import React from 'react';
 import { LogBox } from 'react-native';
-import ApollosConfig from '@apollosproject/config';
 
 import StorybookUI, {
   loadApollosStories,

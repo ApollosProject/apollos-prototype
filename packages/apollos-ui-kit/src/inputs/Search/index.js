@@ -7,6 +7,7 @@ import SearchActions from './SearchActions';
 
 class Search extends PureComponent {
   static propTypes = {
+    showCancelButton: PropTypes.bool,
     cancelButtonText: PropTypes.string,
     disabled: PropTypes.bool,
     inputRef: PropTypes.node, // Need access to the search input? pass in your ref here!
@@ -22,6 +23,7 @@ class Search extends PureComponent {
   };
 
   static defaultProps = {
+    showCancelButton: true,
     cancelButtonText: 'Cancel',
     disabled: false,
     placeholder: 'Search',
@@ -135,6 +137,7 @@ class Search extends PureComponent {
       placeholder,
       screenBackgroundColor,
       value,
+      showCancelButton,
       ...textInputProps
     } = this.props;
 
@@ -143,7 +146,7 @@ class Search extends PureComponent {
         <TextInputWrapper>
           <LoopIcon name={'search'} isFocused={this.state.isFocused} />
           <Input
-            cancelButtonOffset={this.cancelButtonWidth} // used for styling
+            cancelButtonOffset={showCancelButton ? this.cancelButtonWidth : 0} // used for styling
             forwardedRef={this.inputRef}
             editable={!disabled}
             isFocused={this.state.isFocused} // used for styling
@@ -159,6 +162,7 @@ class Search extends PureComponent {
 
         <Animated.View style={this.animatedSmokeAndMirrorsStyle}>
           <SearchActions
+            showCancelButton={showCancelButton}
             cancelButtonText={cancelButtonText}
             isFocused={this.state.isFocused}
             onPressCancel={this.handleOnPressCancel}

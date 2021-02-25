@@ -1,0 +1,31 @@
+name: Codecov Report
+
+on:
+  push:
+    branches:
+      - master
+      - next
+      - v1
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node 10.19.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 10.19.x
+
+    - name: Install Yarn
+      run: npm install -g yarn
+
+    - name: Install Dependencies
+      run: yarn
+
+    - name: Jest
+      run: yarn test --stream -- -- --maxWorkers=2
+
+    - name: Codecov
+      uses: codecov/codecov-action@v1

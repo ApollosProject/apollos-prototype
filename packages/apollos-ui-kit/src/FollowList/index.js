@@ -61,10 +61,6 @@ class FollowList extends PureComponent {
     onConfirm: PropTypes.func,
   };
 
-  static defaultProps = {
-    isCard: true,
-  };
-
   RenderAsCard = ({ children }) =>
     this.props.isCard ? (
       <Card isLoading={this.props.isLoading}>{children}</Card>
@@ -103,9 +99,9 @@ class FollowList extends PureComponent {
                   .join(' ') || ''
               }
               imageSource={get(item, 'image.sources[0]', '')}
-              onFollow={(id) => onFollow(id)}
-              onHide={(id) => onHide(id)}
-              onConfirm={(id) => onConfirm(id)}
+              onFollow={(id) => onFollow?.(id)}
+              onHide={(id) => onHide?.(id)}
+              onConfirm={(id) => onConfirm?.(id)}
             />
           ))}
           {onPressFollowListButton && followListButtonTitle ? (

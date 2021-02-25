@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@apollosproject/ui-storybook';
+import { View, Button, SafeAreaView } from 'react-native';
 
-import { View } from 'react-native';
-import CenteredView from '../CenteredView';
-import BackgroundView from '../BackgroundView';
-import { H3, H4 } from '../typography';
+import CenteredView from '../../CenteredView';
+import BackgroundView from '../../BackgroundView';
 
-import FollowListSearchModal from './FollowListSearch/FollowListSearchModal';
-import FollowList from '.';
+import styled from '../../styled';
+import FollowListSearchModal from './FollowListSearchModal';
+import FollowListSearch from '.';
 
 const followerRequests = [
   {
@@ -81,6 +81,10 @@ const followerSuggestions = [
   },
 ];
 
+const Container = styled({
+  height: '100%',
+})(SafeAreaView);
+
 const buttonFuncs = {
   onHide(id) {
     console.log(`hide request for ${id}`);
@@ -93,18 +97,35 @@ const buttonFuncs = {
   },
 };
 
-function ModalStory() {
+function FollowListSearchStory() {
+  const [followers, setFollowers] = useState([]);
+
+  return (
+    <Container>
+      <FollowListSearch
+        onSearch={(value) =>
+          setFollowers(
+            [...followerSuggestions, ...followerRequests].filter((follower) =>
+              `${follower.firstName.toLowerCase()} ${follower.lastName.toLowerCase()}`.includes(
+                value.toLowerCase()
+              )
+            )
+          )
+        }
+        results={followers}
+        {...buttonFuncs}
+      />
+    </Container>
+  );
+}
+
+function FollowListSearchModalStory() {
   const [open, setModalOpen] = useState(false);
   const [followers, setFollowers] = useState([]);
 
   return (
     <View>
-      <FollowList
-        followers={followerRequests}
-        onPressFollowListButton={() => setModalOpen(true)}
-        followListButtonTitle="Find People to Follow"
-        {...buttonFuncs}
-      />
+      <Button onPress={() => setModalOpen(true)} title="Open" />
       <FollowListSearchModal
         open={open}
         setModalOpen={setModalOpen}
@@ -124,53 +145,16 @@ function ModalStory() {
   );
 }
 
-storiesOf('FollowList', module)
+storiesOf('FollowListSearch', module)
   .addDecorator((story) => (
     <BackgroundView>
       {/* eslint-disable-next-line react-native/no-inline-styles */}
       <CenteredView style={{ alignItems: 'stretch' }}>{story()}</CenteredView>
     </BackgroundView>
   ))
-  .add('default', () => (
-    <>
-      <FollowList
-        followers={followerRequests}
-        {...buttonFuncs}
-        header={<H4>Follow Requests</H4>}
-      />
-      <FollowList
-        followers={followerSuggestions}
-        {...buttonFuncs}
-        header={<H4>Suggested Followers</H4>}
-      />
-    </>
-  ))
-  .add('header', () => {
-    return (
-      <FollowList
-        followers={followerRequests}
-        header={
-          <H4 numberOfLines={1} ellipsizeMode="tail">
-            Follow Requests
-          </H4>
-        }
-        {...buttonFuncs}
-      />
-    );
+  .add('default', () => {
+    return <FollowListSearchStory />;
   })
-  .add('onPressActionListButton', () => <ModalStory />)
-  .add('isCard', () => (
-    <FollowList followers={followerRequests} isCard {...buttonFuncs} />
-  ))
-  .add('isLoading', () => (
-    <FollowList
-      isLoading
-      followers={followerRequests}
-      header={
-        <H3 numberOfLines={1} ellipsizeMode="tail">
-          Some random text that encourages you
-        </H3>
-      }
-      {...buttonFuncs}
-    />
-  ));
+  .add('has modal variation', () => {
+    return <FollowListSearchModalStory />;
+  });

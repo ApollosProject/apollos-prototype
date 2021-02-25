@@ -1,9 +1,7 @@
 import { Client } from 'pg';
 import { dbName } from './src/postgres/test-connect';
 
-const JEST_WORKER_COUNT = 2;
-
-export default async () => {
+export default async ({ maxWorkers }) => {
   let count = 1;
 
   const client = new Client({
@@ -13,7 +11,7 @@ export default async () => {
 
   await client.connect();
 
-  while (count <= JEST_WORKER_COUNT) {
+  while (count <= maxWorkers) {
     // eslint-disable-next-line no-await-in-loop
     await client.query(
       `DROP DATABASE IF EXISTS ${dbName(count)} WITH (FORCE);`
