@@ -46,6 +46,7 @@
     "react-native-onesignal": "*"
   },
   "dependencies": {
+    "formik": "1.5.1",
     "graphql-tag": "2.9.2",
     "lodash": "^4.17.11",
     "url": "^0.11.0"

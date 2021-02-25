@@ -3,34 +3,32 @@ import PropTypes from 'prop-types';
 import { Switch } from '@apollosproject/ui-kit';
 import { Formik } from 'formik';
 
-const onChange = (newState, toggleNotifications) => {
-  toggleNotifications();
-  return newState;
-};
-
 const NotificationSettings = ({
-  notificationsEnabled,
+  allNotificationsEnabled,
   toggleNotifications,
 }) => (
-  <Formik initialValues={{ enabled: notificationsEnabled }}>
-    {({ handleChange, values }) => (
+  <Formik initialValues={{ allNotifications: allNotificationsEnabled }}>
+    {({ setFieldValue, values }) => (
       <Switch
-        value={values.enabled}
-        label={'allNotifications'}
-        onValueChange={onChange(handleChange('enabled'), toggleNotifications)}
+        value={values.allNotifications}
+        label={'Notifications'}
+        onValueChange={async () =>
+          (await toggleNotifications()) &&
+          setFieldValue('allNotifications', !values.allNotifications)
+        }
       />
     )}
   </Formik>
 );
 
 NotificationSettings.propTypes = {
-  notificationsEnabled: PropTypes.bool,
+  allNotificationsEnabled: PropTypes.bool,
   toggleNotifications: PropTypes.func,
 };
 
 NotificationSettings.defaultProps = {
-  notificationsEnabled: false,
-  toggleNotifications: () => {},
+  allNotificationsEnabled: false,
+  toggleNotifications: () => null,
 };
 
 NotificationSettings.displayName = 'NotificationSettings';
