@@ -8037,6 +8037,11 @@ react-native-permissions@2.0.5:
   resolved "https://registry.yarnpkg.com/react-native-permissions/-/react-native-permissions-2.0.5.tgz#fbb338f5f4fd3dfcaff415d614a5d3b4af63885b"
   integrity sha512-6eKWGPvBL3RpobqumNNjXxCvZIfIZOKwOSPq8rGu2jL9O9jSllm0IqBcamRKhi3BN+uwh4gWaOBzFLLq2/94zQ==
 
+react-native-permissions@^2.0.5:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/react-native-permissions/-/react-native-permissions-2.2.2.tgz#3d2a63f6b7d6be52fc86e30f77412a9566283028"
+  integrity sha512-ihf4shQDSX5Oo9ChQXb9kr13mmyyNem5MaEvOpr3dCjhBOBWyEMztXm9/uPK1Qg5PsNpaYLa1KpcPZDCw87LXg==
+
 react-native-safe-area-context@^3.1.9:
   version "3.1.9"
   resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-3.1.9.tgz#48864ea976b0fa57142a2cc523e1fd3314e7247e"

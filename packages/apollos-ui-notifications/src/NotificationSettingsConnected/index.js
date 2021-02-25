@@ -38,9 +38,9 @@ const NotificationsConnected = () => {
   return (
     <NotificationSettings
       allNotificationsEnabled={hasPushPermission}
-      toggleNotifications={() => {
-        requestPermissions(() => updatePermissionStatus(forceUpdate));
-      }}
+      toggleNotifications={() =>
+        requestPermissions(() => updatePermissionStatus(forceUpdate))
+      }
     />
   );
 };
