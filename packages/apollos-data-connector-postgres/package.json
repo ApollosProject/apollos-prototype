@@ -1,7 +1,7 @@
 {
   "name": "@apollosproject/data-connector-postgres",
   "repository": "git://github.com/apollosproject/apollos-apps.git",
-  "version": "2.0.1-canary.0",
+  "version": "2.1.1",
   "main": "lib/index.js",
   "scripts": {
     "test": "TZ=UTC jest",
@@ -30,8 +30,8 @@
     "globalTeardown": "./jest.teardown.js"
   },
   "dependencies": {
-    "@apollosproject/data-schema": "^2.0.1-canary.0",
-    "@apollosproject/server-core": "^2.0.1-canary.0",
+    "@apollosproject/data-schema": "^2.1.1",
+    "@apollosproject/server-core": "^2.1.1",
     "lodash": "^4.17.11",
     "pg": "^8.5.1",
     "pg-hstore": "^2.3.3",
@@ -41,7 +41,7 @@
     "@apollosproject/config": "*"
   },
   "devDependencies": {
-    "@apollosproject/babel-preset-apollos": "^2.0.0",
+    "@apollosproject/babel-preset-apollos": "^2.1.1",
     "jest": "^25.1.0",
     "sequelize-mock": "^0.10.2"
   },

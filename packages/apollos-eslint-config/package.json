@@ -1,7 +1,7 @@
 {
   "name": "@apollosproject/eslint-config",
   "repository": "git://github.com/apollosproject/apollos-apps.git",
-  "version": "2.0.0",
+  "version": "2.1.1",
   "main": "./index.js",
   "devDependencies": {
     "@react-native-community/eslint-config": "^2.0.0",

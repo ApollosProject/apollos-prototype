@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.1.1](https://github.com/apollosproject/apollos-apps/compare/v2.1.0...v2.1.1) (2021-02-26)
+
+**Note:** Version bump only for package @apollosproject/ui-fragments
+
+
+
+
+
+## [2.1.0](https://github.com/apollosproject/apollos-apps/compare/v2.0.1-canary.0...v2.1.0) (2021-02-26)
+
+
+### Features
+
+* Add NodeSingleConnected live stream support. ([#1741](https://github.com/apollosproject/apollos-apps/issues/1741)) ([695e8cb](https://github.com/apollosproject/apollos-apps/commit/695e8cb4df9331aba19fc1666e5566d9f2545e2f))
+
+
+### Bug Fixes
+
+* remove comment list query fragment ([#1747](https://github.com/apollosproject/apollos-apps/issues/1747)) ([e014263](https://github.com/apollosproject/apollos-apps/commit/e0142635302cf71cb61eccfd2337183e8f1818e4))
+
+
+
 # [2.0.0](https://github.com/apollosproject/apollos-apps/compare/v2.0.0-beta.4...v2.0.0) (2021-02-03)
 
 **Note:** Version bump only for package @apollosproject/ui-fragments

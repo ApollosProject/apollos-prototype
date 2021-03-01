@@ -1,7 +1,7 @@
 {
   "name": "@apollosproject/ui-onboarding",
   "repository": "git://github.com/apollosproject/apollos-apps.git",
-  "version": "2.0.1-canary.0",
+  "version": "2.1.1",
   "main": "src/index.js",
   "files": [
     "src/**",

@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.1.1](https://github.com/apollosproject/apollos-apps/compare/v2.1.0...v2.1.1) (2021-02-26)
+
+**Note:** Version bump only for package @apollosproject/data-connector-postgres
+
+
+
+
+
+## [2.1.0](https://github.com/apollosproject/apollos-apps/compare/v2.0.1-canary.0...v2.1.0) (2021-02-26)
+
+
+### Features
+
+* Add a unique index for origin fields and switch to uuid for ids ([#1762](https://github.com/apollosproject/apollos-apps/issues/1762)) ([2deaf28](https://github.com/apollosproject/apollos-apps/commit/2deaf288013b50b1833094eb61a0155334e17834))
+* Postgres instead of SQLite ([#1752](https://github.com/apollosproject/apollos-apps/issues/1752)) ([dbacb3c](https://github.com/apollosproject/apollos-apps/commit/dbacb3c2e504cbda1c37572e03381674543156ef))
+
+
+
 # [2.0.0](https://github.com/apollosproject/apollos-apps/compare/v2.0.0-beta.4...v2.0.0) (2021-02-03)
 
 **Note:** Version bump only for package @apollosproject/data-connector-postgres

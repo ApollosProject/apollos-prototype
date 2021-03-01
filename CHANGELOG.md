@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.1.1](https://github.com/ApollosProject/apollos-apps/compare/v2.1.0...v2.1.1) (2021-02-26)
+
+**Note:** Version bump only for package apollos
+
+
+
+
+
+## [2.1.0](https://github.com/ApollosProject/apollos-apps/compare/v2.0.1-canary.0...v2.1.0) (2021-02-26)
+
+
+### Features
+
+* Add a unique index for origin fields and switch to uuid for ids ([#1762](https://github.com/ApollosProject/apollos-apps/issues/1762)) ([2deaf28](https://github.com/ApollosProject/apollos-apps/commit/2deaf288013b50b1833094eb61a0155334e17834))
+* Add NodeSingleConnected live stream support. ([#1741](https://github.com/ApollosProject/apollos-apps/issues/1741)) ([695e8cb](https://github.com/ApollosProject/apollos-apps/commit/695e8cb4df9331aba19fc1666e5566d9f2545e2f))
+* Follow List Search ([#1754](https://github.com/ApollosProject/apollos-apps/issues/1754)) ([23318a6](https://github.com/ApollosProject/apollos-apps/commit/23318a6fa5719fab421f5f32cccf7df54d65870f))
+* Postgres instead of SQLite ([#1752](https://github.com/ApollosProject/apollos-apps/issues/1752)) ([dbacb3c](https://github.com/ApollosProject/apollos-apps/commit/dbacb3c2e504cbda1c37572e03381674543156ef))
+
+
+### Bug Fixes
+
+* add sharing to text and scripture features ([#1740](https://github.com/ApollosProject/apollos-apps/issues/1740)) ([4680e13](https://github.com/ApollosProject/apollos-apps/commit/4680e13c6ddd093ffe791ffc6dc8067f5084e7cd))
+* Button padding on Auth Onboarding ([#1750](https://github.com/ApollosProject/apollos-apps/issues/1750)) ([9fbda1f](https://github.com/ApollosProject/apollos-apps/commit/9fbda1ffd4336b4dc8c2baca4eaa45948b2b74cd))
+* Correctly default date picker to 18 years ago ([#1751](https://github.com/ApollosProject/apollos-apps/issues/1751)) ([fa48b87](https://github.com/ApollosProject/apollos-apps/commit/fa48b877fce2c04e56d214e26b18ea6d005e0050))
+* insure to generate stories for storybook ([29a573e](https://github.com/ApollosProject/apollos-apps/commit/29a573e2fee1314e6e6a10dcc9cc1a6bcdc3d7b8))
+* remove comment list query fragment ([#1747](https://github.com/ApollosProject/apollos-apps/issues/1747)) ([e014263](https://github.com/ApollosProject/apollos-apps/commit/e0142635302cf71cb61eccfd2337183e8f1818e4))
+* send feature ID to share button ([#1734](https://github.com/ApollosProject/apollos-apps/issues/1734)) ([d3e537e](https://github.com/ApollosProject/apollos-apps/commit/d3e537e22f05826a1563b45ece8cf4661835f944))
+
+
+
 # [2.0.0](https://github.com/ApollosProject/apollos-apps/compare/v2.0.0-beta.4...v2.0.0) (2021-02-03)
 
 

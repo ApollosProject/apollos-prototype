@@ -1,7 +1,7 @@
 {
   "name": "@apollosproject/ui-auth",
   "repository": "git://github.com/apollosproject/apollos-apps.git",
-  "version": "2.0.1-canary.0",
+  "version": "2.1.1",
   "main": "src/index.js",
   "files": [
     "src/**",
@@ -60,7 +60,7 @@
   },
   "devDependencies": {
     "@apollo/client": "3.3.0-rc.2",
-    "@apollosproject/ui-test-utils": "^2.0.1-canary.0",
+    "@apollosproject/ui-test-utils": "^2.1.1",
     "@react-native-community/async-storage": "^1.5.1",
     "@react-navigation/native": "^5.6.1",
     "@react-navigation/stack": "^5.6.2",

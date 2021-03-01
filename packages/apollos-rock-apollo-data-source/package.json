@@ -1,7 +1,7 @@
 {
   "name": "@apollosproject/rock-apollo-data-source",
   "repository": "git://github.com/apollosproject/apollos-apps.git",
-  "version": "2.0.0",
+  "version": "2.1.1",
   "main": "lib/index.js",
   "scripts": {
     "test": "jest",
@@ -34,7 +34,7 @@
     "with-query": "^1.1.2"
   },
   "devDependencies": {
-    "@apollosproject/babel-preset-apollos": "^2.0.0"
+    "@apollosproject/babel-preset-apollos": "^2.1.1"
   },
   "license": "SEE LICENSE IN LICENSE.md",
   "publishConfig": {

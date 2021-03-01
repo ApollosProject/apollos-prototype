@@ -15,7 +15,7 @@
     "push-all": "lerna exec -- yarn yalc push",
     "lint": "lerna run lint",
     "test": "TZ=utc lerna run test",
-    "release": "lerna publish --conventional-commits --create-release github",
+    "release": "lerna publish --conventional-commits --create-release github --force-publish",
     "release:canary": "lerna publish --canary --preid canary",
     "release:next": "lerna publish --canary premajor --dist-tag next --preid canary",
     "prepublishOnly": "lerna run build && lerna run generate-stories",
@@ -41,9 +41,10 @@
     "babel-jest": "^25.1.0",
     "chokidar": "^3.0.1",
     "codecov": "3.7.1",
+    "conventional-changelog-conventionalcommits": "^4.5.0",
+    "eslint-plugin-prettier": "^3.1.4",
     "lerna": "^3.14.0",
     "prettier": "^2.1.2",
-    "eslint-plugin-prettier": "^3.1.4",
     "react-native-storybook-loader": "^1.8.0",
     "yalc": "^1.0.0-pre.35"
   }

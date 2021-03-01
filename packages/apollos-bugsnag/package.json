@@ -1,7 +1,7 @@
 {
   "name": "@apollosproject/bugsnag",
   "repository": "git://github.com/apollosproject/apollos-apps.git",
-  "version": "2.0.1-canary.0",
+  "version": "2.1.1",
   "main": "lib/index.js",
   "react-native": "react-native/index.js",
   "files": [
@@ -34,7 +34,7 @@
     ]
   },
   "devDependencies": {
-    "@apollosproject/babel-preset-apollos": "^2.0.0"
+    "@apollosproject/babel-preset-apollos": "^2.1.1"
   },
   "dependencies": {
     "@bugsnag/js": "7.2.1"

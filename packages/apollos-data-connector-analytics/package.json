@@ -1,7 +1,7 @@
 {
   "name": "@apollosproject/data-connector-analytics",
   "repository": "git://github.com/apollosproject/apollos-apps.git",
-  "version": "2.0.0",
+  "version": "2.1.1",
   "main": "lib/index.js",
   "scripts": {
     "test": "jest",
@@ -36,7 +36,7 @@
     "apollo-server": "^2.11.0"
   },
   "devDependencies": {
-    "@apollosproject/babel-preset-apollos": "^2.0.0"
+    "@apollosproject/babel-preset-apollos": "^2.1.1"
   },
   "publishConfig": {
     "access": "public"

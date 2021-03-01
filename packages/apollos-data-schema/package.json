@@ -1,7 +1,7 @@
 {
   "name": "@apollosproject/data-schema",
   "repository": "git://github.com/apollosproject/apollos-apps.git",
-  "version": "2.0.1-canary.0",
+  "version": "2.1.1",
   "main": "lib/index.js",
   "scripts": {
     "build": "NODE_ENV=production rm -rf ./lib && mkdir -p lib && babel ./src -d ./lib",
@@ -28,7 +28,7 @@
     "graphql-tag": "^2.10.0"
   },
   "devDependencies": {
-    "@apollosproject/babel-preset-apollos": "^2.0.0",
+    "@apollosproject/babel-preset-apollos": "^2.1.1",
     "jest": "^25.1.0"
   },
   "peerDependencies": {
