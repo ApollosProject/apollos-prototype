@@ -27,6 +27,14 @@ yarn storybook
 
 This will boot generate stories from the different packages and surface them in a React Native app on an iPhone Simulator
 
+For simple API deployment, you can use a copy of our api template repo. Start by running 
+
+```
+yarn api
+```
+
+You'll need to have the secret key for the .env file handy. You can pull down specific branches by running `yarn api branch-name`. Be careful not to make any changes in the `ApollosApi` folder, since that folder is wiped out on every run to `yarn api`.
+
 ### Advanced
 
 For more advanced development, you will need to use our templates repo. This will allow you to spin a local version of the API and app.
