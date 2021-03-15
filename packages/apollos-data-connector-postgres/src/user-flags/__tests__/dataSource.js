@@ -51,9 +51,7 @@ describe('Apollos Postgres Comment Flags DataSource', () => {
     });
 
     expect(flaggedComment.id.toString()).toBe(comment.id.toString());
-    expect(flaggedComment.apollosId).toBe(
-      createGlobalId(comment.id, 'Comment')
-    );
+    expect(flaggedComment.apollosId).toBe(`Comment:${comment.id}`);
   });
 
   it('should increment flag count on comment', async () => {

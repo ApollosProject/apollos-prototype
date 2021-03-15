@@ -4,7 +4,6 @@
 import './pgEnum-fix';
 import { Sequelize, DataTypes } from 'sequelize';
 import { Client } from 'pg';
-import { createGlobalId } from '@apollosproject/server-core';
 import ApollosConfig from '@apollosproject/config';
 import connectJest from './test-connect';
 import { ensureLocalDb } from './local-db';
@@ -137,28 +136,13 @@ const defineModel = ({
       hooks: {
         ...(sequelizeOptions?.hooks || {}),
         beforeValidate: (instance) => {
-          // First, compoute the apollos type from the resolve type, if passed.
           if (resolveType && !instance.apollosType) {
             instance.apollosType = resolveType(instance);
-          }
-          // Second, use the origin id to compute the apollos id (if it exists)
-          if (
-            instance.originId != null &&
-            instance.apollosType != null &&
-            !instance.apollosId
-          ) {
-            instance.apollosId = createGlobalId(
-              instance.originId,
-              instance.apollosType
-            );
           }
         },
         afterCreate: async (instance, options) => {
           if (!instance.apollosId) {
-            instance.apollosId = createGlobalId(
-              instance.id,
-              instance.apollosType
-            );
+            instance.apollosId = `${instance.apollosType}:${instance.id}`;
             await instance.save({
               transaction: options.transaction,
             });

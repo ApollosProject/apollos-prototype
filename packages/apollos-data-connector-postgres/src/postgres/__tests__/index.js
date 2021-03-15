@@ -1,5 +1,4 @@
 import { DataTypes } from 'sequelize';
-import { createGlobalId } from '@apollosproject/server-core';
 import { sequelize, defineModel, configureModel, sync } from '../index';
 
 describe('Apollos Postgres support', () => {
@@ -25,9 +24,7 @@ describe('Apollos Postgres support', () => {
 
     expect(fakeContentItem.title).toBe('A content item title');
     expect(fakeContentItem.apollosType).toBe('ContentItem');
-    expect(fakeContentItem.apollosId).toBe(
-      createGlobalId(fakeContentItem.id, 'ContentItem')
-    );
+    expect(fakeContentItem.apollosId).toBe(`ContentItem:${fakeContentItem.id}`);
   });
   it('should support defining new external models', async () => {
     const makeContentItem = defineModel({

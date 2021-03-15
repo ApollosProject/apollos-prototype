@@ -42,7 +42,7 @@ describe('Apollos Postgres Comments DatSource', () => {
     });
 
     expect(comment.text).toBe('I am a fun comment!');
-    expect(comment.apollosId).toBe(createGlobalId(comment.id, 'Comment'));
+    expect(comment.apollosId).toBe(`Comment:${comment.id}`);
   });
 
   it('should prevent creating duplicate comments', async () => {
@@ -180,7 +180,7 @@ describe('Apollos Postgres Comments DatSource', () => {
     });
 
     await flagDataSource.flagComment({
-      commentId: createGlobalId(comment.id, 'Comment'),
+      commentId: `Comment:${comment.id}`,
     });
 
     const itemComments = await commentDataSource.getForNode({
@@ -207,7 +207,7 @@ describe('Apollos Postgres Comments DatSource', () => {
     });
 
     await flagDataSource.flagComment({
-      commentId: createGlobalId(comment.id, 'Comment'),
+      commentId: `Comment:${comment.id}`,
     });
 
     const itemComments = await commentDataSource.getForNode({
