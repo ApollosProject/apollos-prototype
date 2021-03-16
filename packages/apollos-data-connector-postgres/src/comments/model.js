@@ -26,6 +26,13 @@ const createModel = defineModel({
 const setupModel = configureModel(({ sequelize }) => {
   sequelize.models.comments.belongsTo(sequelize.models.people);
   sequelize.models.people.hasMany(sequelize.models.comments);
+
+  // Used to identify user relationships when querying for comments
+  // Specifically, to sort the comments of those you follow to the top
+  sequelize.models.comments.hasMany(sequelize.models.follows, {
+    foreignKey: 'followedPersonId',
+    sourceKey: 'personId',
+  });
 });
 
 export { createModel, Visibility, setupModel };
