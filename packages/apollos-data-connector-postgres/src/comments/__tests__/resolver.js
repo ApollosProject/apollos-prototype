@@ -12,12 +12,14 @@ import {
 } from '@apollosproject/data-schema';
 import * as Comment from '../index';
 import * as Person from '../../people';
+import * as Follow from '../../follows';
 import * as UserFlag from '../../user-flags/index';
 
 const { getSchema, getContext } = createTestHelpers({
   Comment,
   UserFlag,
   Person,
+  Follow,
 });
 
 describe('Apollos Postgres Comment Flags Resolver', () => {

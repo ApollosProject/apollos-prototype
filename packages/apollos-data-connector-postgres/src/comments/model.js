@@ -32,6 +32,7 @@ const setupModel = configureModel(({ sequelize }) => {
   sequelize.models.comments.hasMany(sequelize.models.follows, {
     foreignKey: 'followedPersonId',
     sourceKey: 'personId',
+    constraints: false,
   });
 });
 
