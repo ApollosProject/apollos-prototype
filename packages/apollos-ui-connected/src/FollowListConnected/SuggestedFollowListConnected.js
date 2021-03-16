@@ -1,14 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useQuery } from '@apollo/client';
 import PropTypes from 'prop-types';
 import { named, H4 } from '@apollosproject/ui-kit';
 import GET_SUGGESTED_FOLLOWS from './getSuggestedFollows';
 import FollowListConnected from './FollowListConnected';
 
-const SuggestedFollowListConnected = ({ Component, Header, ...props }) => {
-  const { data, loading } = useQuery(GET_SUGGESTED_FOLLOWS, {
+const SuggestedFollowListConnected = ({
+  Component,
+  Header,
+  refetchRef,
+  ...props
+}) => {
+  const { data, loading, refetch } = useQuery(GET_SUGGESTED_FOLLOWS, {
     fetchPolicy: 'cache-and-network',
   });
+
+  useEffect(() => {
+    if (refetch && refetchRef)
+      refetchRef({ refetch, id: 'suggested-follow-list' });
+  }, []);
+
   const suggestedFollows = data?.suggestedFollows || [];
 
   return (
@@ -33,6 +44,7 @@ SuggestedFollowListConnected.propTypes = {
     PropTypes.func,
     PropTypes.object,
   ]),
+  refetchRef: PropTypes.func,
 };
 
 SuggestedFollowListConnected.defaultProps = {
