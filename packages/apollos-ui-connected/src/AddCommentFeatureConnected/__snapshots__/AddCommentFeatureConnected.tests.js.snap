@@ -831,7 +831,7 @@ exports[`The CommentListFeatureConnected component should render 1`] = `
                       }
                       thumbTintColor="#FFFFFF"
                       tintColor="#A5A5A5"
-                      value={true}
+                      value={false}
                     />
                   </View>
                 </View>

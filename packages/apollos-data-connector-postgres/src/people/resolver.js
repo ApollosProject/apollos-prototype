@@ -1,6 +1,4 @@
 import moment from 'moment-timezone';
-// import { createGlobalId } from '@apollosproject/server-core';
-// import ApollosConfig from '@apollosproject/config';
 import { enforceCurrentUser } from '../utils';
 
 export default {
@@ -20,6 +18,7 @@ export default {
       birthDate ? moment(birthDate).toJSON() : null
     ),
     email: enforceCurrentUser(({ email }) => email),
+    nickName: ({ firstName, lastName }) => `${firstName} ${lastName}`,
   },
   Query: {
     suggestedFollows: async (root, args, { dataSources: { Follow } }) =>

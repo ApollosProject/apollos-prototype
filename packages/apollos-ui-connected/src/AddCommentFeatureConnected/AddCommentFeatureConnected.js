@@ -86,11 +86,12 @@ const AddCommentFeatureConnected = ({
       {...node}
       {...props}
       loading={isLoading || loading}
-      onSubmit={(text) =>
+      onSubmit={(text, visibility) =>
         addComment({
           variables: {
             text,
             parentId: node.relatedNode.id,
+            visibility,
           },
         })
       }

@@ -651,7 +651,7 @@ exports[`The AddCommentInput Component must render 1`] = `
                       }
                       thumbTintColor="#FFFFFF"
                       tintColor="#A5A5A5"
-                      value={true}
+                      value={false}
                     />
                   </View>
                 </View>
@@ -1496,7 +1496,7 @@ exports[`The AddCommentInput Component must render without an avatar 1`] = `
                       }
                       thumbTintColor="#FFFFFF"
                       tintColor="#A5A5A5"
-                      value={true}
+                      value={false}
                     />
                   </View>
                 </View>

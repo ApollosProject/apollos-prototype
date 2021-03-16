@@ -50,7 +50,37 @@ function CommentListFeatureConnected({
     fetchPolicy: 'cache-and-network',
   });
 
-  const [flagComment] = useMutation(FLAG_COMMENT);
+  const onFlagComment = (cache, { data: { flagComment } }) => {
+    // Let's get started! No crashing allowed.
+    try {
+      // Let's find our comment list.
+      const commentListFeature = cache.readQuery({
+        query: GET_COMMENT_LIST_FEATURE,
+        variables: { featureId },
+      });
+
+      // Now let's remove our flagged comment from that comment list.
+      cache.writeQuery({
+        query: GET_COMMENT_LIST_FEATURE,
+        variables: { featureId },
+        data: {
+          ...commentListFeature,
+          node: {
+            ...commentListFeature.node,
+            comments: commentListFeature.node.comments.filter(
+              ({ id }) => id !== flagComment.id
+            ),
+          },
+        },
+      });
+    } catch (e) {
+      console.warn('Failed to update cache after adding comment', e);
+    }
+  };
+
+  const [flagComment] = useMutation(FLAG_COMMENT, {
+    update: onFlagComment,
+  });
 
   const handlePressActionMenu = ({ id: commentId }) => {
     presentActionOption({

@@ -137,7 +137,7 @@ const AddCommentInput = ({ initialPrompt, addPrompt, onSubmit, profile }) => {
   const [isWriting, setIsWriting] = useState(false);
   const [currentText, setCurrentText] = useState(null);
   const [confirmModalOpen, setConfirmModalOpen] = useState(false);
-  const [share, setShare] = useState(true);
+  const [share, setShare] = useState('PRIVATE');
 
   const onPressSave = async () => {
     onSubmit && (await onSubmit(currentText, share)); // eslint-disable-line no-unused-expressions
@@ -195,7 +195,10 @@ const AddCommentInput = ({ initialPrompt, addPrompt, onSubmit, profile }) => {
                 Your name and photo will be visible to the community.
               </ShareDisclaimer>
             </ShareText>
-            <Switch value={share} onValueChange={(value) => setShare(value)} />
+            <Switch
+              value={share === 'PUBLIC'}
+              onValueChange={(value) => setShare(value ? 'PUBLIC' : 'PRIVATE')}
+            />
           </Share>
         </ModalContent>
       </Modal>
