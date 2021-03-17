@@ -227,35 +227,6 @@ describe('Apollos Postgres Comments DatSource', () => {
     expect(itemComments[0].text).toBe('This is okay!');
   });
 
-  it('should only return un-flagged comments', async () => {
-    const commentDataSource = new CommentDataSource();
-    commentDataSource.initialize({ context });
-
-    const flagDataSource = new UserFlagDataSource();
-    flagDataSource.initialize({ context });
-
-    await commentDataSource.addComment({
-      text: `This is okay!`,
-      parentId: createGlobalId(123, 'UniversalContentItem'),
-    });
-    const comment = await commentDataSource.addComment({
-      text: `This is flagged!`,
-      parentId: createGlobalId(123, 'UniversalContentItem'),
-    });
-
-    await flagDataSource.flagComment({
-      commentId: `Comment:${comment.id}`,
-    });
-
-    const itemComments = await commentDataSource.getForNode({
-      nodeId: 123,
-      nodeType: 'UniversalContentItem',
-      flagLimit: 1,
-    });
-    expect(itemComments.length).toBe(1);
-    expect(itemComments[0].text).toBe('This is okay!');
-  });
-
   it('should sort your followers to the top', async () => {
     const commentDataSource = new CommentDataSource();
     commentDataSource.initialize({ context });
