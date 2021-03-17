@@ -5,7 +5,7 @@ import { useNavigation } from '@react-navigation/native';
 import { get } from 'lodash';
 
 import { H3, styled, PaddedView } from '@apollosproject/ui-kit';
-import { UserAvatarConnected } from '@apollosproject/ui-connected';
+import UserAvatarConnected from '../UserAvatarConnected';
 import GET_USER_PROFILE from './getUserProfile';
 
 const GetUserProfile = ({ children }) => (
@@ -26,13 +26,7 @@ const Container = styled({
   justifyContent: 'center',
 })(PaddedView);
 
-const UserAvatarHeader = ({
-  buttonIcon,
-  message,
-  onPressIcon,
-  size,
-  ...props
-}) => {
+const UserAvatarHeader = ({ buttonIcon, message, size, ...props }) => {
   const navigation = useNavigation();
   return (
     <Container>

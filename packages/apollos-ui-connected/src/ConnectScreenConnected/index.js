@@ -13,7 +13,7 @@ import UserAvatarHeaderConnected from '../UserAvatarHeaderConnected';
 
 const FlexedSafeAreaView = styled(
   { flex: 1 },
-  'ui-auth.FlexedSafeAreaView'
+  'ui-connected.ConnectScreenConnected.FlexedSafeAreaView'
 )(SafeAreaView);
 
 const ConnectScreenConnected = (props) => {
@@ -49,16 +49,36 @@ const ConnectScreenConnected = (props) => {
           }
         >
           <UserAvatarHeaderConnected />
-          <ActionBar />
+          {ActionBar && <ActionBar />}
           <RequestedFollowListConnected refetchRef={refetchRef} />
           <SuggestedFollowListConnected refetchRef={refetchRef} />
           <HorizontalLikedContentFeedConnected />
-          <ActionTable />
+          {ActionTable && <ActionTable />}
           {children}
         </ScrollView>
       </FlexedSafeAreaView>
     </BackgroundView>
   );
+};
+
+ConnectScreenConnected.propTypes = {
+  ActionBar: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+    PropTypes.func,
+    PropTypes.object, // covers Fragments
+  ]),
+  ActionTable: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+    PropTypes.func,
+    PropTypes.object,
+  ]),
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+    PropTypes.object, // covers Fragments
+  ]),
 };
 
 export default ConnectScreenConnected;
